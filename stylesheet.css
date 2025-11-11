@@ -139,6 +139,22 @@ h3 {
 }
 
 
+
+
+
+.ccf-rank {
+  background-color: #f1cece;
+  color: #b81515f8;
+  padding: 2px 6px;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
 .accepted-venue-detail {
   font-weight: bold;
   color: #663399;
