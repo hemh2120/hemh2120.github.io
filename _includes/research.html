@@ -1,0 +1,29 @@
+{% assign profile = site.data.profile %}
+
+<div class="space-y-4 text-slate-700">
+  <p>
+    {{ profile.research_interests }}
+  </p>
+  
+  <!-- Collaboration and Notes -->
+  <div class="space-y-3">
+    <!-- Collaboration Note -->
+    <div class="p-4 bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-400 rounded-r-lg">
+      <div class="flex items-start gap-2">
+        <span class="text-lg">🤝</span>
+        <div class="text-sm text-slate-600 leading-relaxed">
+          <span class="font-medium text-slate-700">I'm open to collaborations on related projects, feel free to contact me!</span>
+          <br>
+          <span class="text-xs text-slate-500 mt-1 block">Papers sorted by recency. * indicates equal contribution.</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Collaboration Open Indicator -->
+    <div class="flex items-center gap-2 p-3 bg-slate-50 border border-slate-100 rounded-lg w-fit text-sm">
+      <span class="flex h-2 w-2 rounded-full bg-green-500 green-dot"></span>
+      <span>Open to collaboration.</span>
+      <a href="mailto:{{ site.author.email }}" class="font-semibold text-primary-600 hover:underline">Contact Me</a>
+    </div>
+  </div>
+</div>

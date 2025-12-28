@@ -1,0 +1,110 @@
+{% comment %}
+Publication Card Component
+Usage: {% include pub-card.html pub=publication %}
+{% endcomment %}
+
+<div class="pub-card group flex flex-col md:flex-row gap-6 p-4 rounded-xl">
+  <!-- Teaser Image -->
+  {% if include.pub.teaser_image %}
+  <div class="md:w-48 lg:w-56 shrink-0 hidden md:block">
+    <div class="teaser-image rounded-lg overflow-hidden border border-slate-200 bg-white aspect-[16/10] relative top-1 shadow-sm">
+      <img 
+        src="{{ include.pub.teaser_image | relative_url }}" 
+        alt="Teaser for {{ include.pub.title }}" 
+        class="w-full h-full object-cover" 
+        loading="lazy"
+      >
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- Content -->
+  <div class="flex-1 min-w-0">
+    <!-- Title -->
+    <h3 class="text-lg font-bold text-slate-900 leading-tight mb-2 group-hover:text-primary-700 transition-colors">
+      {{ include.pub.title }}
+    </h3>
+    
+    <!-- Authors -->
+    <p class="text-slate-600 text-sm mb-2 leading-relaxed">
+      {% for author in include.pub.authors %}
+        {% if author contains "Minghua He" %}
+          <span class="font-bold text-slate-900 underline decoration-slate-300 underline-offset-2">{{ author }}</span>{% unless forloop.last %}, {% endunless %}
+        {% else %}
+          {{ author }}{% unless forloop.last %}, {% endunless %}
+        {% endif %}
+      {% endfor %}
+    </p>
+
+    <!-- Venue & Tags -->
+    <div class="mb-3">
+      <div class="flex flex-wrap items-center gap-2 mb-1">
+        {% for tag in include.pub.tags %}
+          {% if tag contains "CCF-A" or tag contains "CCF-B" or tag contains "Tsinghua-A" %}
+            <span class="venue-rank-badge">{{ tag }}</span>
+          {% endif %}
+        {% endfor %}
+        {% if include.pub.venue_short %}
+          <span class="venue-short-badge">{{ include.pub.venue_short }}</span>
+        {% elsif include.pub.venue %}
+          <span class="venue-short-badge">{{ include.pub.venue }}</span>
+        {% endif %}
+        {% if include.pub.award %}
+          <span class="award-badge-inline">
+            <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z" clip-rule="evenodd" />
+            </svg>
+            <span>{{ include.pub.award }}</span>
+          </span>
+        {% endif %}
+      </div>
+      {% if include.pub.venue_full %}
+      <div class="text-slate-500 text-sm italic">
+        {{ include.pub.venue_full }}
+      </div>
+      {% endif %}
+    </div>
+
+    <!-- Links -->
+    <div class="flex flex-wrap gap-3 text-sm font-medium mb-3">
+      {% for link in include.pub.links %}
+      <a 
+        href="{{ link.url }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="pub-link flex items-center gap-1.5 text-primary-600 hover:text-primary-800 transition-colors"
+      >
+        {% if link.name == "Project" %}
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+        </svg>
+        {% elsif link.name == "Paper" %}
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+        </svg>
+        {% elsif link.name == "Code" %}
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+        </svg>
+        {% else %}
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+        </svg>
+        {% endif %}
+        <span>{{ link.name }}</span>
+      </a>
+      {% endfor %}
+    </div>
+
+    <!-- TLDR -->
+    <details class="group/tldr tldr-details">
+      <summary class="cursor-pointer text-sm text-slate-500 hover:text-slate-700 transition-colors flex items-start gap-1">
+        <span class="font-semibold text-slate-600 shrink-0">TL;DR:</span>
+        <span class="tldr-preview">{{ include.pub.tldr | truncate: 70 }}</span>
+      </summary>
+      <p class="mt-1 text-sm text-slate-500 tldr-full">
+        {{ include.pub.tldr }}
+      </p>
+    </details>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+{% comment %}
+Publications Section
+Displays publications organized by type (Conference Papers, Preprints)
+{% endcomment %}
+
+{% assign publications = site.data.publications %}
+{% assign conference_pubs = publications | where: "type", "conference" %}
+{% assign preprint_pubs = publications | where: "type", "preprint" %}
+
+<!-- Conference Papers -->
+<div class="mb-8">
+  <h3 class="text-xl font-bold text-slate-800 mb-4 border-l-4 border-slate-300 pl-3">Conference Papers</h3>
+  <div class="space-y-6">
+    {% for pub in conference_pubs %}
+      {% include pub-card.html pub=pub %}
+    {% endfor %}
+  </div>
+</div>
+
+<!-- Preprints -->
+{% if preprint_pubs.size > 0 %}
+<div>
+  <h3 class="text-xl font-bold text-slate-800 mb-4 border-l-4 border-slate-300 pl-3">Preprints</h3>
+  <div class="space-y-6">
+    {% for pub in preprint_pubs %}
+      {% include pub-card.html pub=pub %}
+    {% endfor %}
+  </div>
+</div>
+{% endif %}

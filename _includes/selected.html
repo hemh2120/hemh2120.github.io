@@ -1,0 +1,19 @@
+{% comment %}
+Selected Publications Section
+Displays only publications marked as selected in specified order
+{% endcomment %}
+
+{% assign publications = site.data.publications %}
+
+{% comment %} Define the order of selected publications {% endcomment %}
+{% assign selected_order = "execoder-emnlp2025,chimera-ase2025,midlog-icse2025" | split: "," %}
+
+<div class="space-y-6">
+  {% for id in selected_order %}
+    {% for pub in publications %}
+      {% if pub.id == id and pub.selected == true %}
+        {% include pub-card.html pub=pub %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+</div>

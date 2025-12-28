@@ -1,0 +1,20 @@
+# Gallery Data
+- id: "tokyo"
+  image: "images/tokyo.jpg"
+  caption: "Cherry Blossoms"
+  location: "Tokyo, Japan"
+
+- id: "bergen"
+  image: "images/bergen.jpg"
+  caption: "Fjord Views"
+  location: "Bergen, Norway"
+
+- id: "paris"
+  image: "images/paris.jpg"
+  caption: "Historic Streets"
+  location: "Paris, France"
+
+- id: "murmansk"
+  image: "images/murmansk.jpg"
+  caption: "Aurora Borealis"
+  location: "Murmansk, Russia"

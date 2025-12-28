@@ -1,0 +1,36 @@
+# News Data
+- date: "2025/12"
+  content: "Three papers accepted to ICSE 2026!"
+  highlight: false
+
+- date: "2025/10"
+  content: "Selected as an in-person volunteer for EMNLP 2025!"
+  highlight: false
+
+- date: "2025/09"
+  content: "Three papers accepted to ASE 2025!"
+  highlight: false
+
+- date: "2025/08"
+  content: "One paper accepted to ASE 2025 (Directly Accept, Top 9.5%), see you in Seoul! 🇰🇷"
+  highlight: true
+
+- date: "2025/08"
+  content: "One paper accepted to EMNLP 2025 (Oral Presentation, Top 4.3%), see you in Suzhou! 🇨🇳"
+  highlight: true
+
+- date: "2025/07"
+  content: "Two papers accepted to ISSRE 2025!"
+  highlight: false
+
+- date: "2025/03"
+  content: "Three papers accepted to FSE 2025, see you in Trondheim! 🇳🇴"
+  highlight: false
+
+- date: "2025/01"
+  content: "One paper accepted to ICSE 2025, see you in Ottawa! 🇨🇦"
+  highlight: false
+
+- date: "2024/08"
+  content: "One paper accepted to ISSRE 2024, see you in Tsukuba! 🇯🇵"
+  highlight: false

@@ -1,0 +1,573 @@
+# Publications Data
+
+# ==================== Preprints ====================
+- id: "dtree-rpo-preprint"
+  title: "d-TreeRPO: Towards More Reliable Policy Optimization for Diffusion Language Models"
+  authors:
+    - "Leyi Pan"
+    - "Shuchang Tao"
+    - "Yunpeng Zhai"
+    - "Zheyu Fu"
+    - "Liancheng Fang"
+    - "Minghua He"
+    - "Lingzhe Zhang"
+    - "Zhaoyang Liu"
+    - "Bolin Ding"
+    - "Aiwei Liu"
+    - "Lijie Wen"
+  year: 2025
+  venue: "Preprint"
+  venue_full: "arXiv Preprint"
+  type: "preprint"
+  tags: []
+  links:
+    - name: "Paper"
+      url: "https://arxiv.org/pdf/2512.09675"
+  tldr: "We propose d-TreeRPO, a reliable RL framework for diffusion LLMs that leverages tree-structured rollouts and bottom-up advantage computation with verifiable rewards, achieving significant gains on reasoning benchmarks."
+  teaser_image: "images/d-TreeRPO.png"
+  selected: false
+
+- id: "parallel-survey-preprint"
+  title: "A Survey on Parallel Text Generation: From Parallel Decoding to Diffusion Language Models"
+  authors:
+    - "Lingzhe Zhang*"
+    - "Liancheng Fang*"
+    - "Chiming Duan*"
+    - "Minghua He*"
+    - "Leyi Pan*"
+    - "Pei Xiao"
+    - "Shiyu Huang"
+    - "Yunpeng Zhai"
+    - "Xuming Hu"
+    - "Philip S. Yu"
+    - "Aiwei Liu"
+  year: 2025
+  venue: "Preprint"
+  venue_full: "arXiv Preprint"
+  type: "preprint"
+  tags: []
+  links:
+    - name: "Paper"
+      url: "https://arxiv.org/abs/2508.08712"
+    - name: "Code"
+      url: "https://github.com/zhanglingzhe0820/Awesome-Parallel-Text-Generation"
+  tldr: "A comprehensive survey of parallel text generation techniques, from parallel decoding to the latest diffusion language models."
+  teaser_image: "images/parallel_survey.png"
+  selected: false
+
+- id: "microremed-preprint"
+  title: "MicroRemed: Benchmarking LLMs in Microservices Remediation"
+  authors:
+    - "Lingzhe Zhang"
+    - "Yunpeng Zhai"
+    - "Tong Jia"
+    - "Chiming Duan"
+    - "Minghua He"
+    - "Leyi Pan"
+    - "Zhaoyang Liu"
+    - "Bolin Ding"
+    - "Ying Li"
+  year: 2025
+  venue: "Preprint"
+  venue_full: "arXiv Preprint"
+  type: "preprint"
+  tags: []
+  links:
+    - name: "Paper"
+      url: "https://arxiv.org/abs/2511.01166"
+    - name: "Code"
+      url: "https://github.com/LLM4AIOps/MicroRemed"
+  tldr: "We introduce MicroRemed, the first benchmark for evaluating LLMs in end-to-end microservice remediation, from diagnosis reports directly to executable Ansible playbooks."
+  teaser_image: "images/microremed.png"
+  selected: false
+
+- id: "codead-preprint"
+  title: "CodeAD: Synthesize Code of Rules for Log-based Anomaly Detection with LLMs"
+  authors:
+    - "Junjie Huang"
+    - "Minghua He"
+    - "Jinyang Liu"
+    - "Yintong Huo"
+    - "Domenico Bianculli"
+    - "Michael R. Lyu"
+  year: 2025
+  venue: "Preprint"
+  venue_full: "arXiv Preprint"
+  type: "preprint"
+  tags: []
+  links:
+    - name: "Paper"
+      url: "https://arxiv.org/abs/2510.22986"
+  tldr: "We present CodeAD, a novel framework that automatically synthesizes lightweight Python rule functions for LogAD using LLMs, achieving 3.6% F1 improvement while processing datasets 4x faster at a fraction of the cost."
+  teaser_image: "images/codead.png"
+  selected: false
+
+- id: "duet-preprint"
+  title: "Duet: Joint Exploration of User–Item Profiles"
+  authors:
+    - "Yue Chen"
+    - "Lu Wang"
+    - "Minjie Hong"
+    - "Pu Zhao"
+    - "Fangkai Yang"
+    - "Yifei Dong"
+    - "Minghua He"
+    - "Nan Hu"
+    - "Jianjin Zhang"
+    - "Zhiwei Dai"
+    - "Yuefeng Zhan"
+    - "Weihao Han"
+    - "Hao Sun"
+    - "Qingwei Lin"
+    - "Weiwei Deng"
+    - "Feng Sun"
+    - "Qi Zhang"
+    - "Saravan Rajmohan"
+    - "Dongmei Zhang"
+  year: 2025
+  venue: "Preprint"
+  venue_full: "arXiv Preprint"
+  type: "preprint"
+  tags: []
+  links:
+    - name: "Project"
+      url: "https://hemh2120.github.io/"
+  tldr: "We propose DUET, a closed-loop framework for joint exploration of user-item textual profiles in recommendation systems. It distills raw data into concise cues, expands them into rich profiles via self-prompt construction, and optimizes profiles jointly with reinforcement learning using downstream recommendation feedback, while enabling interpretable LLM-compatible representations."
+  teaser_image: "images/duet.png"
+  selected: false
+
+- id: "supclap-preprint"
+  title: "SupCLAP: Controlling Optimization Trajectory Drift in Audio-Text Contrastive Learning with Support Vector Regularization"
+  authors:
+    - "Jiehui Luo"
+    - "Yuguo Yin"
+    - "Yuxin Xie"
+    - "Jinghan Ru"
+    - "Xianwei Zhuang"
+    - "Minghua He"
+    - "Aofan Liu"
+    - "Zihan Xiong"
+    - "Dongchao Yang"
+  year: 2025
+  venue: "Preprint"
+  venue_full: "arXiv Preprint"
+  type: "preprint"
+  tags: []
+  links:
+    - name: "Paper"
+      url: "https://arxiv.org/abs/2509.21033"
+  tldr: "We propose Support Vector Regularization (SVR) to control optimization trajectory drift in contrastive language-audio pretraining by using an auxiliary support vector to harness rich information from negative samples while improving training stability."
+  teaser_image: "images/supclap.png"
+  selected: false
+
+- id: "rclagent-preprint"
+  title: "Adaptive Root Cause Localization for Microservice Systems with Multi-Agent Recursion-of-Thought"
+  authors:
+    - "Lingzhe Zhang"
+    - "Tong Jia"
+    - "Kangjin Wang"
+    - "Weijie Hong"
+    - "Chiming Duan"
+    - "Minghua He"
+    - "Ying Li"
+  year: 2025
+  venue: "Preprint"
+  venue_full: "arXiv Preprint"
+  type: "preprint"
+  tags: []
+  links:
+    - name: "Paper"
+      url: "https://arxiv.org/abs/2508.20370"
+  tldr: "Inspired by how human SREs operate, we introduce RCLAgent, a multi-agent recursion-of-thought framework that accurately localizes the root cause of failures in microservice systems using only a single request."
+  teaser_image: "images/RCLAgent.png"
+  selected: false
+
+- id: "warriormath-preprint"
+  title: "WarriorMath: Enhancing the Mathematical Ability of Large Language Models with a Defect-aware Framework"
+  authors:
+    - "Yue Chen*"
+    - "Minghua He*"
+    - "Fangkai Yang"
+    - "Pu Zhao"
+    - "Lu Wang"
+    - "Yu Kang"
+    - "Yifei Dong"
+    - "Yuefeng Zhan"
+    - "Hao Sun"
+    - "Qingwei Lin"
+    - "Saravan Rajmohan"
+    - "Dongmei Zhang"
+  year: 2025
+  venue: "Preprint"
+  venue_full: "arXiv Preprint"
+  type: "preprint"
+  tags: []
+  links:
+    - name: "Paper"
+      url: "https://arxiv.org/abs/2508.01245"
+  tldr: "We propose WarriorMath, a defect-aware framework that improves LLM mathematical reasoning through targeted data synthesis and progressive training."
+  teaser_image: "images/warriormath.png"
+  selected: false
+
+- id: "fusionlog-preprint"
+  title: "FusionLog: Cross-System Log-based Anomaly Detection via Fusion of General and Proprietary Knowledge"
+  authors:
+    - "Xinlong Zhao"
+    - "Tong Jia"
+    - "Minghua He"
+    - "Xixuan Yang"
+    - "Ying Li"
+  year: 2025
+  venue: "Preprint"
+  venue_full: "arXiv Preprint"
+  type: "preprint"
+  tags: []
+  links:
+    - name: "Paper"
+      url: "https://arxiv.org/abs/2511.05878"
+  tldr: "FusionLog routes unlabeled target logs by semantic similarity, applies meta-learned small models to general logs, and distills LLM-guided pseudo labels for proprietary logs to fuse knowledge without target labels."
+  teaser_image: "images/fusionlog.png"
+  selected: false
+
+# ==================== Publications ====================
+- id: "generallog-icse2026"
+  title: "Generality Is Not Enough: Zero-Label Cross-System Log-Based Anomaly Detection via Knowledge-Level Collaboration"
+  authors:
+    - "Xinlong Zhao"
+    - "Tong Jia"
+    - "Minghua He"
+    - "Ying Li"
+  year: 2026
+  venue: "ICSE-NIER 2026"
+  venue_short: "ICSE-NIER 2026"
+  venue_full: "IEEE/ACM International Conference on Software Engineering"
+  type: "conference"
+  tags:
+    - "CCF-A"
+  links:
+    - name: "Paper"
+      url: "https://arxiv.org/abs/2511.05882"
+  tldr: "GeneralLog collaborates LLMs and small models at the knowledge level, routing proprietary logs to LLMs and general logs to small models to reach 90%+ F1 under fully zero-label settings."
+  teaser_image: "images/generallog.png"
+  selected: false
+  award: null
+
+- id: "logaction-ase2025"
+  title: "LogAction: Consistent Cross-system Anomaly Detection through Logs via Active Domain"
+  authors:
+    - "Chiming Duan*"
+    - "Minghua He*"
+    - "Pei Xiao"
+    - "Tong Jia"
+    - "Xin Zhang"
+    - "Zhewei Zhong"
+    - "Xiang Luo"
+    - "Yan Niu"
+    - "Lingzhe Zhang"
+    - "Yifan Wu"
+    - "Siyu Yu"
+    - "Weijie Hong"
+    - "Ying Li"
+    - "Gang Huang"
+  year: 2025
+  venue: "ASE 2025"
+  venue_short: "ASE 2025"
+  venue_full: "IEEE/ACM International Conference on Automated Software Engineering"
+  type: "conference"
+  tags:
+    - "CCF-A"
+  links:
+    - name: "Project"
+      url: "https://logaction.github.io/"
+    - name: "Paper"
+      url: "https://arxiv.org/abs/2510.03288"
+  tldr: "We propose LogAction, a framework that integrates transfer and active learning to achieve high-performance cross-system anomaly detection with minimal labeling effort."
+  teaser_image: "images/logaction.png"
+  selected: false
+
+- id: "coorlog-ase2025"
+  title: "CoorLog: Efficient-Generalizable Log Anomaly Detection via Adaptive Coordinator in Software Evolution"
+  authors:
+    - "Pei Xiao*"
+    - "Chiming Duan*"
+    - "Minghua He*"
+    - "Tong Jia"
+    - "Yifan Wu"
+    - "Jing Xu"
+    - "Gege Gao"
+    - "Lingzhe Zhang"
+    - "Weijie Hong"
+    - "Ying Li"
+    - "Gang Huang"
+  year: 2025
+  venue: "ASE 2025"
+  venue_short: "ASE 2025"
+  venue_full: "IEEE/ACM International Conference on Automated Software Engineering"
+  type: "conference"
+  tags:
+    - "CCF-A"
+  links:
+    - name: "Paper"
+      url: "https://arxiv.org/abs/2511.05862"
+  tldr: "We propose CoorLog, a framework using an adaptive coordinator for efficient and generalizable log anomaly detection, especially in evolving software systems."
+  teaser_image: "images/coorlog.png"
+  selected: false
+
+- id: "chimera-ase2025"
+  title: "United We Stand: Towards End-to-End Log-based Fault Diagnosis via Interactive Multi-Task Learning"
+  authors:
+    - "Minghua He*"
+    - "Chiming Duan*"
+    - "Pei Xiao*"
+    - "Tong Jia"
+    - "Siyu Yu"
+    - "Lingzhe Zhang"
+    - "Weijie Hong"
+    - "Jing Han"
+    - "Yifan Wu"
+    - "Ying Li"
+    - "Gang Huang"
+  year: 2025
+  venue: "ASE 2025"
+  venue_short: "ASE 2025"
+  venue_full: "IEEE/ACM International Conference on Automated Software Engineering"
+  type: "conference"
+  tags:
+    - "CCF-A"
+    - "Directly Accept"
+  award: "Directly Accept (113/1190, Top 9.5%)"
+  links:
+    - name: "Paper"
+      url: "https://arxiv.org/abs/2509.24364"
+    - name: "Code"
+      url: "https://github.com/hemh02/Chimera"
+  tldr: "We propose Chimera, an end-to-end framework that unifies anomaly detection and root cause localization through interactive multi-task learning and bidirectional knowledge transfer."
+  teaser_image: "images/chimera.png"
+  selected: true
+
+- id: "faithlog-ase2025"
+  title: "Walk the Talk: Is Your Log-based Software Reliability Maintenance System Really Reliable?"
+  authors:
+    - "Minghua He"
+    - "Tong Jia"
+    - "Chiming Duan"
+    - "Pei Xiao"
+    - "Lingzhe Zhang"
+    - "Kangjin Wang"
+    - "Yifan Wu"
+    - "Ying Li"
+    - "Gang Huang"
+  year: 2025
+  venue: "ASE-NIER 2025"
+  venue_short: "ASE-NIER 2025"
+  venue_full: "IEEE/ACM International Conference on Automated Software Engineering"
+  type: "conference"
+  tags:
+    - "CCF-A"
+  links:
+    - name: "Paper"
+      url: "https://arxiv.org/abs/2509.24352"
+  tldr: "We introduce 'diagnostic faithfulness' as a key metric and propose FaithLog, a system that enhances model trustworthiness via a causality-guided attention mechanism."
+  teaser_image: "images/faithlog.png"
+  selected: false
+
+- id: "execoder-emnlp2025"
+  title: "ExeCoder: Empowering Large Language Models with Executability Representation for Code Translation"
+  authors:
+    - "Minghua He*"
+    - "Yue Chen*"
+    - "Fangkai Yang"
+    - "Pu Zhao"
+    - "Wenjie Yin"
+    - "Yu Kang"
+    - "Qingwei Lin"
+    - "Saravan Rajmohan"
+    - "Dongmei Zhang"
+  year: 2025
+  venue: "EMNLP 2025"
+  venue_short: "EMNLP 2025"
+  venue_full: "Conference on Empirical Methods in Natural Language Processing"
+  type: "conference"
+  tags:
+    - "Tsinghua-A"
+    - "Oral"
+  award: "Oral Presentation (356/8174, Top 4.3%)"
+  links:
+    - name: "Project"
+      url: "https://execoder4trans.github.io/"
+    - name: "Paper"
+      url: "https://aclanthology.org/2025.emnlp-main.362.pdf"
+    - name: "Code"
+      url: "https://github.com/Microsoft/ExeCoder"
+  tldr: "ExeCoder enhances LLM-based code translation by incorporating executability representations like syntax and semantics."
+  teaser_image: "images/execoder.png"
+  selected: true
+
+- id: "zerolog-issre2025"
+  title: "ZeroLog: Zero-Label Generalizable Cross-System Log-based Anomaly Detection"
+  authors:
+    - "Xinlong Zhao"
+    - "Tong Jia"
+    - "Minghua He"
+    - "Ying Li"
+    - "Gang Huang"
+  year: 2025
+  venue: "ISSRE 2025"
+  venue_short: "ISSRE 2025"
+  venue_full: "International Symposium on Software Reliability Engineering"
+  type: "conference"
+  tags:
+    - "CCF-B"
+  links:
+    - name: "Paper"
+      url: "https://hemh2120.github.io/"
+  tldr: "We introduce ZeroLog, a framework for zero-label, generalizable cross-system anomaly detection using logs."
+  teaser_image: "images/zerolog.png"
+  selected: false
+
+- id: "cslparser-issre2025"
+  title: "CSLParser: A Collaborative Framework Using Small and Large Language Models for Log Parsing"
+  authors:
+    - "Weijie Hong"
+    - "Yifan Wu"
+    - "Lingzhe Zhang"
+    - "Chiming Duan"
+    - "Pei Xiao"
+    - "Minghua He"
+    - "Xixuan Yang"
+    - "Ying Li"
+  year: 2025
+  venue: "ISSRE 2025"
+  venue_short: "ISSRE 2025"
+  venue_full: "International Symposium on Software Reliability Engineering"
+  type: "conference"
+  tags:
+    - "CCF-B"
+  links:
+    - name: "Paper"
+      url: "https://hemh2120.github.io/"
+  tldr: "CSLParser presents a collaborative framework where small and large language models work together for efficient log parsing."
+  teaser_image: "images/cslparser.png"
+  selected: false
+
+- id: "freelog-fse2025"
+  title: "From Few-Label to Zero-Label: An Approach for Cross-System Log-Based Anomaly Detection with Meta-Learning"
+  authors:
+    - "Xinlong Zhao"
+    - "Tong Jia"
+    - "Minghua He"
+    - "Yihan Wu"
+    - "Ying Li"
+    - "Gang Huang"
+  year: 2025
+  venue: "FSE-IVR 2025"
+  venue_short: "FSE-IVR 2025"
+  venue_full: "ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering"
+  type: "conference"
+  tags:
+    - "CCF-A"
+  links:
+    - name: "Paper"
+      url: "https://dl.acm.org/doi/abs/10.1145/3696630.3728519"
+  tldr: "We propose FreeLog, a system-agnostic meta-learning approach for cross-system log anomaly detection that requires no labeled data from the target system."
+  teaser_image: "images/freelog.png"
+  selected: false
+
+- id: "vista-fse2025"
+  title: "Exploring Variable Potential for LLM-based Log Parsing Efficiency and Reduced Costs"
+  authors:
+    - "Jinrui Sun"
+    - "Tong Jia"
+    - "Minghua He"
+    - "Yihan Wu"
+    - "Ying Li"
+    - "Gang Huang"
+  year: 2025
+  venue: "FSE-IVR 2025"
+  venue_short: "FSE-IVR 2025"
+  venue_full: "ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering"
+  type: "conference"
+  tags:
+    - "CCF-A"
+  links:
+    - name: "Paper"
+      url: "https://dl.acm.org/doi/abs/10.1145/3696630.3728506"
+  tldr: "We propose VISTA, a variable-centric strategy that improves the efficiency and reduces the cost of LLM-based log parsing through novel sampling, caching, and ICL techniques."
+  teaser_image: "images/vista.png"
+  selected: false
+
+- id: "clslog-fse2025"
+  title: "CLSLog: Collaborating large and Small Models for Log-based Anomaly Detection"
+  authors:
+    - "Pei Xiao"
+    - "Tong Jia"
+    - "Chiming Duan"
+    - "Minghua He"
+    - "Weijie Hong"
+    - "Xixuan Yang"
+    - "Yihan Wu"
+    - "Ying Li"
+    - "Gang Huang"
+  year: 2025
+  venue: "FSE-IVR 2025"
+  venue_short: "FSE-IVR 2025"
+  venue_full: "ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering"
+  type: "conference"
+  tags:
+    - "CCF-A"
+  links:
+    - name: "Paper"
+      url: "https://dl.acm.org/doi/abs/10.1145/3696630.3728524"
+  tldr: "We propose CLSLog, a collaborative scheme combining LLM generalization and small model efficiency to effectively handle evolutionary logs in anomaly detection."
+  teaser_image: "images/clslog.png"
+  selected: false
+
+- id: "midlog-icse2025"
+  title: "Weakly-supervised Log-based Anomaly Detection with Inexact Labels via Multi-instance Learning"
+  authors:
+    - "Minghua He"
+    - "Tong Jia"
+    - "Chiming Duan"
+    - "Huaqian Cai"
+    - "Ying Li"
+    - "Gang Huang"
+  year: 2025
+  venue: "ICSE 2025"
+  venue_short: "ICSE 2025"
+  venue_full: "IEEE/ACM International Conference on Software Engineering"
+  type: "conference"
+  tags:
+    - "CCF-A"
+  links:
+    - name: "Paper"
+      url: "https://ieeexplore.ieee.org/abstract/document/11029770"
+    - name: "Code"
+      url: "https://github.com/hemh02/MIDLog"
+  tldr: "We propose MIDLog, a weakly-supervised method using multi-instance learning to enable log anomaly detection with inexact, bag-level labels instead of fine-grained annotation."
+  teaser_image: "images/midlog.png"
+  selected: true
+
+- id: "llmelog-issre2024"
+  title: "LLMeLog: An Approach for Anomaly Detection based on LLM-enriched Log Events"
+  authors:
+    - "Minghua He"
+    - "Tong Jia"
+    - "Chiming Duan"
+    - "Huaqian Cai"
+    - "Ying Li"
+    - "Gang Huang"
+  year: 2024
+  venue: "ISSRE 2024"
+  venue_short: "ISSRE 2024"
+  venue_full: "International Symposium on Software Reliability Engineering"
+  type: "conference"
+  tags:
+    - "CCF-B"
+  links:
+    - name: "Paper"
+      url: "https://ieeexplore.ieee.org/abstract/document/10771398/"
+    - name: "Code"
+      url: "https://github.com/hemh02/LLMeLog"
+  tldr: "We propose LLMeLog, which leverages LLMs to enrich log event semantics and fine-tunes a BERT model on the enriched data, significantly boosting anomaly detection accuracy."
+  teaser_image: "images/llmelog.png"
+  selected: false

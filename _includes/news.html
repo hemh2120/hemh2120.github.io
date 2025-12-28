@@ -1,0 +1,15 @@
+{% assign news = site.data.news %}
+
+<div class="news-scroll-container">
+  <ul class="space-y-3">
+    {% for item in news %}
+    <li class="flex gap-2 text-slate-700 text-xs md:text-sm items-start news-item-row">
+      <span class="font-mono text-slate-400 shrink-0 min-w-[70px] text-right text-xs">{{ item.date }}</span>
+      <div class="flex gap-1.5 items-start flex-1">
+        <span class="text-sm shrink-0">🎉🎉</span>
+        <div class="{% if item.highlight %}font-medium text-slate-900{% endif %} news-content flex-1">{{ item.content }}</div>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

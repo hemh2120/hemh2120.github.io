@@ -1,0 +1,33 @@
+# Personal Profile Data
+name: "Minghua (Richardo) He"
+tagline: "Foundation Models & Reliable AI/Systems"
+photo: "images/minghua_he_profile.jpg"
+
+tags:
+  - "Foundation Models"
+  - "Reliable AI"
+  - "AI Systems"
+  - "AIOps"
+
+bio: |
+  I am currently a graduate student at <a href="https://english.pku.edu.cn/" class="bio-link">Peking University</a>, the National Engineering Research Center for Software Engineering. 
+  
+  I've also had great experiences working at <a href="https://www.tencent.com/en-us/" class="bio-link">WeChat AI</a>, <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/" class="bio-link">Microsoft Research Asia</a> and <a href="https://www.alibabagroup.com/en-US" class="bio-link">Alibaba Group</a>. 
+  
+  My research interest is broadly in <strong>Foundation Models</strong> and <strong>Reliable AI/Systems</strong>. 
+  
+  I am dedicated to bridging the gap between AI and systems in the real world, and making AI and systems more reliable.
+
+highlights: |
+  5+ First/Co-first Author Papers in CCF-A Conferences
+  Oral Presentations & Top Papers in Top-tier Conferences
+  Research Internships at Top Tech Labs
+  Core Contributor to Well-known Open-source Foundation Models
+
+social_links:
+  - name: "Email"
+    url: "mailto:hemh2120@gmail.com"
+  - name: "Google Scholar"
+    url: "https://scholar.google.com/citations?hl=zh-CN&user=rWjNtFEAAAAJ"
+  - name: "GitHub"
+    url: "https://github.com/hemh02"

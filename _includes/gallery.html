@@ -1,0 +1,33 @@
+{% assign gallery = site.data.gallery %}
+
+<div class="space-y-6">
+  <!-- Introduction -->
+  <p class="text-slate-600 max-w-2xl">
+    Outside of research, I recharge through <strong>travel</strong>, <strong>fitness</strong>, and <strong>landscape photography</strong>. 
+    I've chased auroras at the edge of the earth and I'm already dreaming of the next adventure.
+  </p>
+  
+  <!-- Photo Grid -->
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    {% for item in gallery %}
+    <div class="gallery-item group relative aspect-[4/5] rounded-xl overflow-hidden cursor-pointer shadow-md">
+      <img 
+        src="{{ item.image | relative_url }}" 
+        alt="{{ item.location }}" 
+        class="w-full h-full object-cover"
+        loading="lazy"
+      >
+      <div class="overlay absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 flex flex-col justify-end p-3">
+        <span class="text-white font-medium text-sm">{{ item.location }}</span>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  
+  <!-- View Full Gallery Link -->
+  <div class="text-center pt-2">
+    <button class="text-sm font-medium text-primary-600 hover:text-primary-800 transition-colors">
+      View full gallery →
+    </button>
+  </div>
+</div>

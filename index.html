@@ -1,545 +1,119 @@
-<!DOCTYPE HTML>
-<html lang="en">
-  <head>
-    <title>Minghua He</title>
-    
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="author" content="Minghua He">
-    <meta name="viewport" content="width=900px, initial-scale=0.8, maximum-scale=2.0, user-scalable=yes">
-    
-    <link rel="shortcut icon" href="images/head.jpg" type="image/jpeg">
-    <link rel="icon" href="images/head.jpg" type="image/jpeg">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
+---
+layout: default
+title: Home
+---
 
-    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>      
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
-      });
-    </script>
-  </head>
+<!-- About Section -->
+<section id="about" class="py-12 md:py-16 scroll-mt-16">
+  {% include hero.html %}
+</section>
 
-  <body>
-    <table style="width:100%; max-width:900px; border:0px; border-spacing:0px; border-collapse:separate; margin-left:auto; margin-right:auto;">
-      <tbody>
-        <tr style="padding:0px">
-          <td style="padding:0px">
+<!-- News Section -->
+<section id="news" class="py-12 md:py-16 scroll-mt-16">
+  <details class="group" open>
+    <summary class="cursor-pointer flex items-center text-2xl md:text-3xl font-bold text-slate-900 mb-8 select-none">
+      <svg class="w-6 h-6 mr-3 transition-transform group-open:rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+      🔥 News
+      <div class="section-title-bar h-1 w-16 ml-4 rounded-full opacity-80"></div>
+    </summary>
+    <div class="details-content">
+      {% include news.html %}
+    </div>
+  </details>
+</section>
 
-            <table style="width:100%; border:0px; border-spacing:0px; border-collapse:separate; margin-left:auto; margin-right:auto;">
-              <tbody>
-                <tr style="padding:0px">
+<!-- Research Section -->
+<section id="research" class="py-12 md:py-16 scroll-mt-16 pb-2">
+  <details class="group" open>
+    <summary class="cursor-pointer flex items-center text-2xl md:text-3xl font-bold text-slate-900 mb-8 select-none">
+      <svg class="w-6 h-6 mr-3 transition-transform group-open:rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+      📝 Research
+      <div class="section-title-bar h-1 w-16 ml-4 rounded-full opacity-80"></div>
+    </summary>
+    <div class="details-content">
+      {% include research.html %}
+    </div>
+  </details>
+</section>
 
-                  <td style="padding: 20px; width:64%; vertical-align:middle">
-                    <p class="webname" style="text-align: center;">
-                      👋 Minghua He 
-                    </p>
-                    <p>
-I am currently a graduate student at <a href="https://english.pku.edu.cn/">Peking University</a>, the National Engineering Research Center for Software Engineering. 
-I've also had great experiences working at <a href="https://www.tencent.com/en-us/">WeChat AI</a>, <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/">Microsoft Research Asia</a> and <a href="https://www.alibabagroup.com/en-US">Alibaba Group</a>.
-My research interest is broadly in <strong>Foundation Models</strong> and <strong>Reliable AI/Systems</strong>.
-I am dedicated to bridging the gap between AI and systems in the real world, and making AI and systems more reliable.
-                    </p>
-                    <p style="text-align:center; margin-top: 0px; margin-bottom: 0px;">
-                      📧 <a href="mailto:hemh2120@gmail.com">Email</a> &nbsp;/&nbsp;
-                      📚 <a href="https://scholar.google.com/citations?hl=zh-CN&user=rWjNtFEAAAAJ">Google Scholar</a> &nbsp;/&nbsp;
-                      💻 <a href="https://github.com/hemh02">Github</a> &nbsp;/&nbsp;
-                    </p>
-                  </td>
+<!-- Selected Publications Section -->
+<section id="selected" class="pt-4 pb-12 md:pb-16 scroll-mt-16">
+  <details class="group" open>
+    <summary class="cursor-pointer flex items-center text-lg md:text-xl font-semibold text-slate-800 mb-6 ml-4 select-none">
+      <svg class="w-5 h-5 mr-2 transition-transform group-open:rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+      🌟 Selected Publications
+      <div class="section-subtitle-bar h-0.5 w-12 ml-3 rounded-full opacity-60"></div>
+    </summary>
+    <div class="details-content">
+      {% include selected.html %}
+    </div>
+  </details>
+</section>
 
-                  <td style="padding: 20px; padding-left: 0px; padding-bottom: 0px; width:20%; max-width:40%">
-                    <img style="width:100%; max-width:100%; object-fit: cover; border-radius: 0%; box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.3);" 
-                         alt="profile photo" 
-                         src="images/minghua_he_profile.jpg" 
-                         class="hoverZoomLink">
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+<!-- Preprints Section -->
+<section id="preprints" class="pt-4 pb-12 md:pb-16 scroll-mt-16">
+  {% assign publications = site.data.publications %}
+  {% assign preprint_pubs = publications | where: "type", "preprint" %}
+  {% if preprint_pubs.size > 0 %}
+  <details class="group" open>
+    <summary class="cursor-pointer flex items-center text-lg md:text-xl font-semibold text-slate-800 mb-6 ml-4 select-none">
+      <svg class="w-5 h-5 mr-2 transition-transform group-open:rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+      🚀 Preprints
+      <div class="section-subtitle-bar h-0.5 w-12 ml-3 rounded-full opacity-60"></div>
+    </summary>
+    <div class="details-content">
+      <div class="space-y-6">
+        {% for pub in preprint_pubs %}
+          {% include pub-card.html pub=pub %}
+        {% endfor %}
+      </div>
+    </div>
+  </details>
+  {% endif %}
+</section>
 
+<!-- Publications Section -->
+<section id="publications" class="pt-4 pb-12 md:pb-16 scroll-mt-16">
+  <details class="group" open>
+    <summary class="cursor-pointer flex items-center text-lg md:text-xl font-semibold text-slate-800 mb-6 ml-4 select-none">
+      <svg class="w-5 h-5 mr-2 transition-transform group-open:rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+      📄 Publications
+      <div class="section-subtitle-bar h-0.5 w-12 ml-3 rounded-full opacity-60"></div>
+    </summary>
+    <div class="details-content">
+      {% assign publications = site.data.publications %}
+      {% assign conference_pubs = publications | where: "type", "conference" %}
+      <div class="space-y-6">
+        {% for pub in conference_pubs %}
+          {% include pub-card.html pub=pub %}
+        {% endfor %}
+      </div>
+    </div>
+  </details>
+</section>
 
-
-
-            <table style="width:100%; border:0px; border-spacing:0px; border-collapse:separate; margin-left:auto; margin-right:auto;">
-              <tbody>
-                <tr>
-                  <td style="padding-top: 0px; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; width:100%; vertical-align:middle">
-                    <h2><b>🔥 News</b></h2>
-                    <ul class="news-list">
-<li> [2025/12] 🎉 Three papers accepted to ICSE 2026!</li>
-<li> [2025/10] 🎉 I was selected as an in-person volunteer🧑‍💻 for EMNLP 2025!</li>
-<li> [2025/09] 🎉 Three papers accepted to ASE 2025!</li>
-<li> [2025/08] 🎉 One paper accepted to ASE 2025 <strong style="color: red;">(Directly Accept, Top 9.5%)</strong>, see you in Seoul, South Korea🇰🇷!</li>
-<li> [2025/08] 🎉 One paper accepted to EMNLP 2025 <strong style="color: red;">(Oral Presentation, Top 4.3%)</strong>, see you in Suzhou, China🇨🇳!</li>
-<li> [2025/07] 🎉 Two papers accepted to ISSRE 2025!</li>
-<li> [2025/03] 🎉 Three papers accepted to FSE 2025, see you in Thronheim, Norway🇳🇴!</li>
-<li> [2025/01] 🎉 One paper accepted to ICSE 2025, see you in Ottawa, Canada🇨🇦!</li>
-<li> [2024/08] 🎉 One paper accepted to ISSRE 2024, see you in Tsukuba, Japan🇯🇵!</li>
-                    </ul>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-
-
-
-            <table style="width:100%; border:0px; border-spacing:0px; border-collapse:separate; margin-left:auto; margin-right:auto;">
-              <tbody>
-                <tr>
-                  <td style="padding-top: 20px; padding-bottom: 0px; padding-left: 20px; padding-right: 20px; width:100%; vertical-align:middle">
-                    <h2><b>📝 Research</b></h2>
-                    <p style="margin-top: 10px; margin-bottom: 10px;">
-                      🤝 I'm open to collaborations on related projects, feel free to contact me! 
-                    </p>
-                    <p style="margin-top: 10px; margin-bottom: 10px;">
-                    📧 <strong>Email: hemh2120 [at] gmail dot com</strong>
-                    </p>
-                    <p style="margin-top: 10px; margin-bottom: 10px;">
-                      Papers sorted by recency. * indicates equal contribution.
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <table style="width:100%; border:0px; border-spacing:0px; border-collapse:separate; margin-left:auto; margin-right:auto;">
-              <tbody>
-                <tr>
-                  <td style="padding-top: 10px; padding-bottom: 0px; padding-left: 20px; padding-right: 20px; width:100%; vertical-align:middle">
-                    <h3><b>📄 Preprints</b></h3>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            
-            <table style="width:100%; border:0px; border-spacing:0px; border-collapse:separate; margin-left:auto; margin-right:auto;">
-              <tbody>
-
-                <tr>
-                  <td style="padding:10px; width:30%; vertical-align:middle"><img src='images/d-TreeRPO.png' style="width:100%; height:auto; box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.3);" alt="d-TreeRPO teaser"></td>
-                  <td style="padding:10px; width:70%; vertical-align:middle">
-                    <span class="papertitle">d-TreeRPO: Towards More Reliable Policy Optimization for Diffusion Language Models</span><br>
-                    <i>Leyi Pan, Shuchang Tao, Yunpeng Zhai, Zheyu Fu, Liancheng Fang, <span class="strong-author" style="font-weight: bold; text-decoration: underline; font-style: italic;">Minghua He</span>, Lingzhe Zhang, Zhaoyang Liu, Bolin Ding, Aiwei Liu, Lijie Wen</i><br>
-                    <a href="https://arxiv.org/pdf/2512.09675">Paper</a> / <a href="https://hemh2120.github.io/">Code</a> <br>
-                    <div><span class="accepted-venue">Preprints</span></div>
-                    <div class="TLDR"><strong>TL;DR:</strong> We propose d-TreeRPO, a reliable RL framework for diffusion LLMs that leverages tree-structured rollouts and bottom-up advantage computation with verifiable rewards, achieving significant gains on reasoning benchmarks.</div>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td style="padding:10px; width:30%; vertical-align:middle"><img src='images/parallel_survey.png' style="width:100%; height:auto; box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.3);" alt="paper teaser"></td>
-                  <td style="padding:10px; width:70%; vertical-align:middle">
-                    <span class="papertitle">A Survey on Parallel Text Generation: From Parallel Decoding to Diffusion Language Models</span><br>
-                    <i>Lingzhe Zhang*, Liancheng Fang*, Chiming Duan*, <span class="strong-author" style="font-weight: bold; text-decoration: underline; font-style: italic;">Minghua He*</span>, Leyi Pan*, Pei Xiao, Shiyu Huang, Yunpeng Zhai, Xuming Hu, Philip S. Yu, Aiwei Liu</i><br>
-                    <a href="https://arxiv.org/abs/2508.08712">Paper</a> / <a href="https://github.com/zhanglingzhe0820/Awesome-Parallel-Text-Generation">Code</a> <br>
-                    <div><span class="accepted-venue">Preprints</span></div>
-<div class="TLDR"><strong>TL;DR:</strong> A comprehensive survey of parallel text generation techniques, from parallel decoding to the latest diffusion language models.</div>
-                  </td>
-                </tr>
-
-
-                <tr>
-                  <td style="padding:10px; width:30%; vertical-align:middle"><img src='images/microremed.png' style="width:100%; height:auto; box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.3);" alt="MicroRemed teaser"></td>
-                  <td style="padding:10px; width:70%; vertical-align:middle">
-                    <span class="papertitle">MicroRemed: Benchmarking LLMs in Microservices Remediation</span><br>
-                    <i>Lingzhe Zhang, Yunpeng Zhai, Tong Jia, Chiming Duan, <span class="strong-author" style="font-weight: bold; text-decoration: underline; font-style: italic;">Minghua He</span>, Leyi Pan, Zhaoyang Liu, Bolin Ding, Ying Li</i><br>
-                    <a href="https://arxiv.org/abs/2511.01166">Paper</a> / <a href="https://github.com/LLM4AIOps/MicroRemed">Code</a> <br>
-                    <div><span class="accepted-venue">Preprints</span></div>
-<div class="TLDR"><strong>TL;DR:</strong> We introduce MicroRemed, the first benchmark for evaluating LLMs in end-to-end microservice remediation, from diagnosis reports directly to executable Ansible playbooks.</div>
-                  </td>
-                </tr>
-
-
-                <tr>
-                  <td style="padding:10px; width:30%; vertical-align:middle"><img src='images/codead.png' style="width:100%; height:auto; box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.3);" alt="CodeAD teaser"></td>
-                  <td style="padding:10px; width:70%; vertical-align:middle">
-                    <span class="papertitle">CodeAD: Synthesize Code of Rules for Log-based Anomaly Detection with LLMs</span><br>
-                    <i>Junjie Huang, <span class="strong-author" style="font-weight: bold; text-decoration: underline; font-style: italic;">Minghua He</span>, Jinyang Liu, Yintong Huo, Domenico Bianculli, Michael R. Lyu</i><br>
-                    <a href="https://arxiv.org/abs/2510.22986">Paper</a> / <a href="https://hemh2120.github.io/">Code</a><br>
-                    <div><span class="accepted-venue">Preprints</span></div>
-<div class="TLDR"><strong>TL;DR:</strong> We present CodeAD, a novel framework that automatically synthesizes lightweight Python rule functions for LogAD using LLMs, achieving 3.6% F1 improvement while processing datasets 4x faster at a fraction of the cost.</div>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td style="padding:10px; width:30%; vertical-align:middle">
-                    <img src='images/duet.png' style="width:100%; height:auto; box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.3);" alt="DUET teaser">
-                  </td>
-
-                  <td style="padding:10px; width:70%; vertical-align:middle">
-                    <span class="papertitle">
-                      Duet: Joint Exploration of User–Item Profiles
-                    </span>
-                    <br>
-
-                    <i>
-                      <span class="author">Yue Chen</span>,
-                      <span class="author">Lu Wang</span>,
-                      <span class="author">Minjie Hong</span>,
-                      <span class="author">Pu Zhao</span>,
-                      <span class="author">Fangkai Yang</span>,
-                      <span class="author">Yifei Dong</span>,
-                      <span class="strong-author" style="font-weight: bold; text-decoration: underline; font-style: italic;">Minghua He</span>,
-                      <span class="author">Nan Hu</span>,
-                      <span class="author">Jianjin Zhang</span>,
-                      <span class="author">Zhiwei Dai</span>,
-                      <span class="author">Yuefeng Zhan</span>,
-                      <span class="author">Weihao Han</span>,
-                      <span class="author">Hao Sun</span>,
-                      <span class="author">Qingwei Lin</span>,
-                      <span class="author">Weiwei Deng</span>,
-                      <span class="author">Feng Sun</span>,
-                      <span class="author">Qi Zhang</span>,
-                      <span class="author">Saravan Rajmohan</span>,
-                      <span class="author">Dongmei Zhang</span>
-                    </i>
-                    <br>
-                    <a href="https://hemh2120.github.io/">Project</a>
-                    &nbsp;/&nbsp;
-                    <a href="https://hemh2120.github.io/">Paper</a>
-                    &nbsp;/&nbsp;
-                    <a href="https://hemh2120.github.io/">Code</a>
-                    <br>
-
-                    <div>
-                      <span class="accepted-venue">Preprints</span> </div>
-
-                    <div class="TLDR">
-                      <strong>TL;DR:</strong>
-                      We propose DUET, a closed-loop framework for joint exploration of user-item textual profiles in recommendation systems. It distills raw data into concise cues, expands them into rich profiles via self-prompt construction, and optimizes profiles jointly with reinforcement learning using downstream recommendation feedback, while enabling interpretable LLM-compatible representations.
-                    </div>
-                  </td>
-                </tr>
-                
-                <tr>
-                  <td style="padding:10px; width:30%; vertical-align:middle"><img src='images/supclap.png' style="width:100%; height:auto; box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.3);" alt="SupCLAP teaser"></td>
-                  <td style="padding:10px; width:70%; vertical-align:middle">
-                    <span class="papertitle">SupCLAP: Controlling Optimization Trajectory Drift in Audio-Text Contrastive Learning with Support Vector Regularization</span><br>
-                    <i>Jiehui Luo, Yuguo Yin, Yuxin Xie, Jinghan Ru, Xianwei Zhuang, <span class="strong-author" style="font-weight: bold; text-decoration: underline; font-style: italic;">Minghua He</span>, Aofan Liu, Zihan Xiong, Dongchao Yang</i><br>
-                    <a href="https://arxiv.org/abs/2509.21033">Paper</a> / <a href="https://hemh2120.github.io/">Code</a><br>
-                    <div><span class="accepted-venue">Preprints</span></div>
-                    <div class="TLDR"><strong>TL;DR:</strong> We propose Support Vector Regularization (SVR) to control optimization trajectory drift in contrastive language-audio pretraining by using an auxiliary support vector to harness rich information from negative samples while improving training stability.</div>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td style="padding:10px; width:30%; vertical-align:middle"><img src='images/RCLAgent.png' style="width:100%; height:auto; box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.3);" alt="RCLAgent teaser"></td>
-                  <td style="padding:10px; width:70%; vertical-align:middle">
-                    <span class="papertitle">Adaptive Root Cause Localization for Microservice Systems with Multi-Agent Recursion-of-Thought</span><br>
-                    <i>Lingzhe Zhang, Tong Jia, Kangjin Wang, Weijie Hong, Chiming Duan, <span class="strong-author" style="font-weight: bold; text-decoration: underline; font-style: italic;">Minghua He</span>, Ying Li</i><br>
-                    <a href="https://arxiv.org/abs/2508.20370">Paper</a> / <a href="https://hemh2120.github.io/">Code</a><br>
-                    <div><span class="accepted-venue">Preprints</span></div>
-                    <div class="TLDR"><strong>TL;DR:</strong> Inspired by how human SREs operate, we introduce RCLAgent, a multi-agent recursion-of-thought framework that accurately localizes the root cause of failures in microservice systems using only a single request.</div>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td style="padding:10px; width:30%; vertical-align:middle"><img src='images/warriormath.png' style="width:100%; height:auto; box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.3);" alt="WarriorMath teaser"></td>
-                  <td style="padding:10px; width:70%; vertical-align:middle">
-                    <span class="papertitle">WarriorMath: Enhancing the Mathematical Ability of Large Language Models with a Defect-aware Framework</span><br>
-                    <i>Yue Chen*, <span class="strong-author" style="font-weight: bold; text-decoration: underline; font-style: italic;">Minghua He*</span>, Fangkai Yang, Pu Zhao, Lu Wang, Yu Kang, Yifei Dong, Yuefeng Zhan, Hao Sun, Qingwei Lin, Saravan Rajmohan, Dongmei Zhang</i><br>
-                    <a href="https://arxiv.org/abs/2508.01245">Paper</a> / <a href="https://hemh2120.github.io/">Code</a><br>
-                    <div><span class="accepted-venue">Preprints</span></div>
-<div class="TLDR"><strong>TL;DR:</strong> We propose WarriorMath, a defect-aware framework that improves LLM mathematical reasoning through targeted data synthesis and progressive training.</div>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td style="padding:10px; width:30%; vertical-align:middle"><img src='images/fusionlog.png' style="width:100%; height:auto; box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.3);" alt="FusionLog teaser"></td>
-                  <td style="padding:10px; width:70%; vertical-align:middle">
-                    <span class="papertitle">FusionLog: Cross-System Log-based Anomaly Detection via Fusion of General and Proprietary Knowledge</span><br>
-                    <i>Xinlong Zhao, Tong Jia, <span class="strong-author" style="font-weight: bold; text-decoration: underline; font-style: italic;">Minghua He</span>, Xixuan Yang, Ying Li</i><br>
-                    <a href="https://arxiv.org/abs/2511.05878">Paper</a> / <a href="https://hemh2120.github.io/">Code</a><br>
-                    <div><span class="accepted-venue">Preprints</span></div>
-                    <div class="TLDR"><strong>TL;DR:</strong> FusionLog routes unlabeled target logs by semantic similarity, applies meta-learned small models to general logs, and distills LLM-guided pseudo labels for proprietary logs to fuse knowledge without target labels.</div>
-                  </td>
-                </tr>
-
-                
-
-              </tbody>
-            </table>
-
-            <table style="width:100%; border:0px; border-spacing:0px; border-collapse:separate; margin-left:auto; margin-right:auto;">
-              <tbody>
-                <tr>
-                  <td style="padding-top: 20px; padding-bottom: 0px; padding-left: 20px; padding-right: 20px; width:100%; vertical-align:middle">
-                    <h3><b>📚 Publications</b></h3>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            
-            <table style="width:100%; border:0px; border-spacing:0px; border-collapse:separate; margin-left:auto; margin-right:auto;">
-              <tbody>
-              
-                <tr>
-                  <td style="padding:10px; width:30%; vertical-align:middle"><img src='images/generallog.png' style="width:100%; height:auto; box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.3);" alt="GeneralLog teaser"></td>
-                  <td style="padding:10px; width:70%; vertical-align:middle">
-                    <span class="papertitle">Generality Is Not Enough: Zero-Label Cross-System Log-Based Anomaly Detection via Knowledge-Level Collaboration</span><br>
-                    <i>Xinlong Zhao, Tong Jia, <span class="strong-author" style="font-weight: bold; text-decoration: underline; font-style: italic;">Minghua He</span>, Ying Li</i><br>
-                    <a href="https://arxiv.org/abs/2511.05882">Paper</a> / <a href="https://hemh2120.github.io/">Code</a><br>
-                    <div>
-                      <span class="ccf-rank">CCF-A</span>&nbsp;
-                      <span class="accepted-venue">ICSE-NIER 2026</span>&nbsp;
-                      <span class="accepted-venue-detail">IEEE/ACM International Conference on Software Engineering</span>
-                    </div>
-                    <div class="TLDR"><strong>TL;DR:</strong> GeneralLog collaborates LLMs and small models at the knowledge level, routing proprietary logs to LLMs and general logs to small models to reach 90%+ F1 under fully zero-label settings.</div>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td style="padding:10px; width:30%; vertical-align:middle"><img src='images/logaction.png' style="width:100%; height:auto; box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.3);" alt="paper teaser"></td>
-                  <td style="padding:10px; width:70%; vertical-align:middle">
-                    <span class="papertitle">LogAction: Consistent Cross-system Anomaly Detection through Logs via Active Domain</span><br>
-                    <i>Chiming Duan*, <span class="strong-author" style="font-weight: bold; text-decoration: underline; font-style: italic;">Minghua He*</span>, Pei Xiao, Tong Jia, Xin Zhang, Zhewei Zhong, Xiang Luo, Yan Niu, Lingzhe Zhang, Yifan Wu, Siyu Yu, Weijie Hong, Ying Li, Gang Huang</i><br>
-                    <a href="https://logaction.github.io/">Project</a> / <a href="https://arxiv.org/abs/2510.03288">Paper</a> / <a href="https://hemh2120.github.io/">Code</a><br>
-                    <div>
-                      <span class="ccf-rank">CCF-A</span>&nbsp;
-                      <span class="accepted-venue">ASE 2025</span>&nbsp;
-                      <span class="accepted-venue-detail">IEEE/ACM International Conference on Automated Software Engineering</span>
-                    </div>
-<div class="TLDR"><strong>TL;DR:</strong> We propose LogAction, a framework that integrates transfer and active learning to achieve high-performance cross-system anomaly detection with minimal labeling effort.</div>
-                  </td>
-                </tr>
-                
-                <tr>
-                  <td style="padding:10px; width:30%; vertical-align:middle"><img src='images/coorlog.png' style="width:100%; height:auto; box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.3);" alt="paper teaser"></td>
-                  <td style="padding:10px; width:70%; vertical-align:middle">
-                    <span class="papertitle">CoorLog: Efficient-Generalizable Log Anomaly Detection via Adaptive Coordinator in Software Evolution</span><br>
-                    <i>Pei Xiao*, Chiming Duan*, <span class="strong-author" style="font-weight: bold; text-decoration: underline; font-style: italic;">Minghua He*</span>, Tong Jia, Yifan Wu, Jing Xu, Gege Gao, Lingzhe Zhang, Weijie Hong, Ying Li, Gang Huang</i><br>
-                    <a href="https://arxiv.org/abs/2511.05862">Paper</a> / <a href="https://hemh2120.github.io/">Code</a><br>
-                    <div>
-                      <span class="ccf-rank">CCF-A</span>&nbsp;
-                      <span class="accepted-venue">ASE 2025</span>&nbsp;
-                      <span class="accepted-venue-detail">IEEE/ACM International Conference on Automated Software Engineering</span>
-                    </div>
-<div class="TLDR"><strong>TL;DR:</strong> We propose CoorLog, a framework using an adaptive coordinator for efficient and generalizable log anomaly detection, especially in evolving software systems.</div>
-                  </td>
-                </tr>
-                
-                <tr>
-                  <td style="padding:10px; width:30%; vertical-align:middle"><img src='images/chimera.png' style="width:100%; height:auto; box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.3);" alt="paper teaser"></td>
-                  <td style="padding:10px; width:70%; vertical-align:middle">
-                    <span class="papertitle">United We Stand: Towards End-to-End Log-based Fault Diagnosis via Interactive Multi-Task Learning</span><br>
-                    <i><span class="strong-author" style="font-weight: bold; text-decoration: underline; font-style: italic;">Minghua He*</span>, Chiming Duan*, Pei Xiao*, Tong Jia, Siyu Yu, Lingzhe Zhang, Weijie Hong, Jing Han, Yifan Wu, Ying Li, Gang Huang</i><br>
-                    <a href="https://arxiv.org/abs/2509.24364">Paper</a> / <a href="https://github.com/hemh02/Chimera">Code</a><br>
-                    <div>
-                      <span class="ccf-rank">CCF-A</span>&nbsp;
-                      <span class="accepted-venue">ASE 2025</span>&nbsp;
-                      <span class="accepted-venue-detail">IEEE/ACM International Conference on Automated Software Engineering</span>
-                      <div style="height:3px;"></div>
-                      <span class="award-venue"><i class="fa-solid fa-trophy"></i><a class="award-venue"> Directly Accept (113/1190, Top 9.5%) </a><i class="fa-solid fa-trophy"></i></span>
-                    </div>
-<div class="TLDR"><strong>TL;DR:</strong> We propose Chimera, an end-to-end framework that unifies anomaly detection and root cause localization through interactive multi-task learning and bidirectional knowledge transfer.</div>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td style="padding:10px; width:30%; vertical-align:middle"><img src='images/faithlog.png' style="width:100%; height:auto; box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.3);" alt="paper teaser"></td>
-                  <td style="padding:10px; width:70%; vertical-align:middle">
-                    <span class="papertitle">Walk the Talk: Is Your Log-based Software Reliability Maintenance System Really Reliable?</span><br>
-                    <i><span class="strong-author" style="font-weight: bold; text-decoration: underline; font-style: italic;">Minghua He</span>, Tong Jia, Chiming Duan, Pei Xiao, Lingzhe Zhang, Kangjin Wang, Yifan Wu, Ying Li, Gang Huang</i><br>
-                    <a href="https://arxiv.org/abs/2509.24352">Paper</a> / <a href="https://hemh2120.github.io/">Code</a><br>
-                    <div>
-                      <span class="ccf-rank">CCF-A</span>&nbsp;
-                      <span class="accepted-venue">ASE-NIER 2025</span>&nbsp;
-                      <span class="accepted-venue-detail">IEEE/ACM International Conference on Automated Software Engineering</span>
-                    </div>
-<div class="TLDR"><strong>TL;DR:</strong> We introduce 'diagnostic faithfulness' as a key metric and propose FaithLog, a system that enhances model trustworthiness via a causality-guided attention mechanism.</div>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td style="padding:10px; width:30%; vertical-align:middle"><img src='images/execoder.png' style="width:100%; height:auto; box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.3);" alt="ExeCoder teaser"></td>
-                  <td style="padding:10px; width:70%; vertical-align:middle">
-                    <span class="papertitle">ExeCoder: Empowering Large Language Models with Executability Representation for Code Translation</span><br>
-                    <i><span class="strong-author" style="font-weight: bold; text-decoration: underline; font-style: italic;">Minghua He*</span>, Yue Chen*, Fangkai Yang, Pu Zhao, Wenjie Yin, Yu Kang, Qingwei Lin, Saravan Rajmohan, Dongmei Zhang</i><br>
-                    <a href="https://execoder4trans.github.io/">Project</a> / <a href="https://aclanthology.org/2025.emnlp-main.362.pdf">Paper</a> / <a href="https://github.com/Microsoft/ExeCoder">Code</a><br>
-                    <div>
-                      <span class="ccf-rank">Tsinghua-A</span>&nbsp;
-                      <span class="accepted-venue">EMNLP 2025</span>&nbsp;
-                      <span class="accepted-venue-detail">Conference on Empirical Methods in Natural Language Processing</span>
-                      <div style="height:3px;"></div>
-                      <span class="award-venue"><i class="fa-solid fa-trophy"></i><a class="award-venue"> Oral Presentation (356/8174, Top 4.3%) </a><i class="fa-solid fa-trophy"></i></span>
-                    </div>
-<div class="TLDR"><strong>TL;DR:</strong> ExeCoder enhances LLM-based code translation by incorporating executability representations like syntax and semantics.</div>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td style="padding:10px; width:30%; vertical-align:middle"><img src='images/zerolog.png' style="width:100%; height:auto; box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.3);" alt="paper teaser"></td>
-                  <td style="padding:10px; width:70%; vertical-align:middle">
-                    <span class="papertitle">ZeroLog: Zero-Label Generalizable Cross-System Log-based Anomaly Detection</span><br>
-                    <i>Xinlong Zhao, Tong Jia, <span class="strong-author" style="font-weight: bold; text-decoration: underline; font-style: italic;">Minghua He</span>, Ying Li, Gang Huang</i><br>
-                    <a href="https://hemh2120.github.io/">Paper</a> / <a href="https://hemh2120.github.io/">Code</a><br>
-                    <div>
-                      <span class="ccf-rank">CCF-B</span>&nbsp;
-                      <span class="accepted-venue">ISSRE 2025</span>&nbsp;
-                      <span class="accepted-venue-detail">International Symposium on Software Reliability Engineering</span>
-                    </div>
-<div class="TLDR"><strong>TL;DR:</strong> We introduce ZeroLog, a framework for zero-label, generalizable cross-system anomaly detection using logs.</div>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td style="padding:10px; width:30%; vertical-align:middle"><img src='images/cslparser.png' style="width:100%; height:auto; box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.3);" alt="paper teaser"></td>
-                  <td style="padding:10px; width:70%; vertical-align:middle">
-                    <span class="papertitle">CSLParser: A Collaborative Framework Using Small and Large Language Models for Log Parsing</span><br>
-                    <i>Weijie Hong, Yifan Wu, Lingzhe Zhang, Chiming Duan, Pei Xiao, <span class="strong-author" style="font-weight: bold; text-decoration: underline; font-style: italic;">Minghua He</span>, Xixuan Yang, Ying Li</i><br>
-                    <a href="https://hemh2120.github.io/">Paper</a> / <a href="https://hemh2120.github.io/">Code</a><br>
-                    <div>
-                      <span class="ccf-rank">CCF-B</span>&nbsp;
-                      <span class="accepted-venue">ISSRE 2025</span>&nbsp;
-                      <span class="accepted-venue-detail">International Symposium on Software Reliability Engineering</span>
-                    </div>
-<div class="TLDR"><strong>TL;DR:</strong> CSLParser presents a collaborative framework where small and large language models work together for efficient log parsing.</div>
-                  </td>
-                </tr>
-                
-                <tr>
-                  <td style="padding:10px; width:30%; vertical-align:middle"><img src='images/freelog.png' style="width:100%; height:auto; box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.3);" alt="paper teaser"></td>
-                  <td style="padding:10px; width:70%; vertical-align:middle">
-                    <span class="papertitle">From Few-Label to Zero-Label: An Approach for Cross-System Log-Based Anomaly Detection with Meta-Learning</span><br>
-                    <i>Xinlong Zhao, Tong Jia, <span class="strong-author" style="font-weight: bold; text-decoration: underline; font-style: italic;">Minghua He</span>, Yihan Wu, Ying Li, Gang Huang</i><br>
-                    <a href="https://dl.acm.org/doi/abs/10.1145/3696630.3728519">Paper</a> / <a href="https://hemh2120.github.io/">Code</a><br>
-                    <div>
-                      <span class="ccf-rank">CCF-A</span>&nbsp;
-                      <span class="accepted-venue">FSE-IVR 2025</span>&nbsp;
-                      <span class="accepted-venue-detail">ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering</span>
-                    </div>
-<div class="TLDR"><strong>TL;DR:</strong> We propose FreeLog, a system-agnostic meta-learning approach for cross-system log anomaly detection that requires no labeled data from the target system.</div>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td style="padding:10px; width:30%; vertical-align:middle"><img src='images/vista.png' style="width:100%; height:auto; box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.3);" alt="paper teaser"></td>
-                  <td style="padding:10px; width:70%; vertical-align:middle">
-                    <span class="papertitle">Exploring Variable Potential for LLM-based Log Parsing Efficiency and Reduced Costs</span><br>
-                    <i>Jinrui Sun, Tong Jia, <span class="strong-author" style="font-weight: bold; text-decoration: underline; font-style: italic;">Minghua He</span>, Yihan Wu, Ying Li, Gang Huang</i><br>
-                    <a href="https://dl.acm.org/doi/abs/10.1145/3696630.3728506">Paper</a> / <a href="https://hemh2120.github.io/">Code</a><br>
-                    <div>
-                      <span class="ccf-rank">CCF-A</span>&nbsp;
-                      <span class="accepted-venue">FSE-IVR 2025</span>&nbsp;
-                      <span class="accepted-venue-detail">ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering</span>
-                    </div>
-<div class="TLDR"><strong>TL;DR:</strong> We propose VISTA, a variable-centric strategy that improves the efficiency and reduces the cost of LLM-based log parsing through novel sampling, caching, and ICL techniques.</div>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td style="padding:10px; width:30%; vertical-align:middle"><img src='images/clslog.png' style="width:100%; height:auto; box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.3);" alt="paper teaser"></td>
-                  <td style="padding:10px; width:70%; vertical-align:middle">
-                    <span class="papertitle">CLSLog: Collaborating large and Small Models for Log-based Anomaly Detection</span><br>
-                    <i>Pei Xiao, Tong Jia, Chiming Duan, <span class="strong-author" style="font-weight: bold; text-decoration: underline; font-style: italic;">Minghua He</span>, Weijie Hong, Xixuan Yang, Yihan Wu, Ying Li, Gang Huang</i><br>
-                    <a href="https://dl.acm.org/doi/abs/10.1145/3696630.3728524">Paper</a> / <a href="https://hemh2120.github.io/">Code</a><br>
-                    <div>
-                      <span class="ccf-rank">CCF-A</span>&nbsp;
-                      <span class="accepted-venue">FSE-IVR 2025</span>&nbsp;
-                      <span class="accepted-venue-detail">ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering</span>
-                    </div>
-<div class="TLDR"><strong>TL;DR:</strong> We propose CLSLog, a collaborative scheme combining LLM generalization and small model efficiency to effectively handle evolutionary logs in anomaly detection.</div>
-                  </td>
-                </tr>
-                
-                <tr>
-                  <td style="padding:10px; width:30%; vertical-align:middle"><img src='images/midlog.png' style="width:100%; height:auto; box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.3);" alt="paper teaser"></td>
-                  <td style="padding:10px; width:70%; vertical-align:middle">
-                    <span class="papertitle">Weakly-supervised Log-based Anomaly Detection with Inexact Labels via Multi-instance Learning</span><br>
-                    <i><span class="strong-author" style="font-weight: bold; text-decoration: underline; font-style: italic;">Minghua He</span>, Tong Jia, Chiming Duan, Huaqian Cai, Ying Li, Gang Huang</i><br>
-                    <a href="https://ieeexplore.ieee.org/abstract/document/11029770">Paper</a> / <a href="https://github.com/hemh02/MIDLog">Code</a><br>
-                    <div>
-                      <span class="ccf-rank">CCF-A</span>&nbsp;
-                      <span class="accepted-venue">ICSE 2025</span>&nbsp;
-                      <span class="accepted-venue-detail">IEEE/ACM International Conference on Software Engineering</span>
-                    </div>
-<div class="TLDR"><strong>TL;DR:</strong> We propose MIDLog, a weakly-supervised method using multi-instance learning to enable log anomaly detection with inexact, bag-level labels instead of fine-grained annotation.</div>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td style="padding:10px; width:30%; vertical-align:middle"><img src='images/llmelog.png' style="width:100%; height:auto; box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.3);" alt="paper teaser"></td>
-                  <td style="padding:10px; width:70%; vertical-align:middle">
-                    <span class="papertitle">LLMeLog: An Approach for Anomaly Detection based on LLM-enriched Log Events</span><br>
-                    <i><span class="strong-author" style="font-weight: bold; text-decoration: underline; font-style: italic;">Minghua He</span>, Tong Jia, Chiming Duan, Huaqian Cai, Ying Li, Gang Huang</i><br>
-                    <a href="https://ieeexplore.ieee.org/abstract/document/10771398/">Paper</a> / <a href="https://github.com/hemh02/LLMeLog">Code</a><br>
-                    <div>
-                      <span class="ccf-rank">CCF-B</span>&nbsp;
-                      <span class="accepted-venue">ISSRE 2024</span>&nbsp;
-                      <span class="accepted-venue-detail">International Symposium on Software Reliability Engineering</span>
-                    </div>
-<div class="TLDR"><strong>TL;DR:</strong> We propose LLMeLog, which leverages LLMs to enrich log event semantics and fine-tunes a BERT model on the enriched data, significantly boosting anomaly detection accuracy.</div>
-                  </td>
-                </tr>
-
-              </tbody>
-            </table>
-
-            <table style="width:100%; border:0px; border-spacing:0px; border-collapse:separate; margin-left:auto; margin-right:auto;">
-              <tbody>
-                <tr>
-                  <td style="padding-top: 20px; padding-bottom: 0px; padding-left: 20px; padding-right: 20px; width:100%; vertical-align:middle">
-                    <h2><b>🌟 Miscellaneous</b></h2>
-                    <p style="margin-top: 10px; margin-bottom: 10px;">
-                      Outside of research, I recharge through <strong>travel</strong>, <strong>fitness</strong>, and <strong>landscape photography</strong>—using my camera to explore the world, from cherry-blossom-laden Tokyo to culture-steeped Paris.<br>
-                      I've chased auroras at the edge of the earth and I'm already dreaming of the next adventure.
-                    </p>
-                    <table style="width:100%; border:0px; border-spacing:10px; border-collapse:separate; margin-left:auto; margin-right:auto;">
-                      <tbody>
-                        <tr>
-                          <td style="width:25%; text-align:center;">
-                            <img src="images/tokyo.jpg" alt="Tokyo" style="width:100%; height:auto; box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.3);">
-                            <div class="TLDR" style="margin-top:5px;">Tokyo</div>
-                          </td>
-                          <td style="width:25%; text-align:center;">
-                            <img src="images/bergen.jpg" alt="Bergen" style="width:100%; height:auto; box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.3);">
-                            <div class="TLDR" style="margin-top:5px;">Bergen</div>
-                          </td>
-                          <td style="width:25%; text-align:center;">
-                            <img src="images/paris.jpg" alt="Paris" style="width:100%; height:auto; box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.3);">
-                            <div class="TLDR" style="margin-top:5px;">Paris</div>
-                          </td>
-                          <td style="width:25%; text-align:center;">
-                            <img src="images/murmansk.jpg" alt="Murmansk" style="width:100%; height:auto; box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.3);">
-                            <div class="TLDR" style="margin-top:5px;">Murmansk</div>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-
-            <table style="width:100%; border:0px; border-spacing:0px; border-collapse:separate; margin-left:auto; margin-right:auto;">
-              <tbody>
-                <tr>
-                  <td style="padding:0px">
-                    <br>
-                    <p style="text-align:right; font-size:small;">
-                      Thank you for visiting! Feel free to contact me if you have any questions.
-                      <br>
-                      This website is designed based on <a href="https://jonbarron.info/" style="font-size: 12px;">Jon Barron</a>.
-                    </p>
-                    <div style="text-align: center; margin: 10px 0;">
-                      <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=J_1gbTzYicjvSHfVs8i-bnA1t65D8qMgjjLiQN7Y7RA&cl=ffffff&w=a"></script>
-New                    </div>
-                    <p style="text-align:center; font-size:small; color: #666;">
-                      Last Update: December, 2025
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    
-  </body>
-</html>
+<!-- Miscellaneous Section -->
+<section id="misc" class="py-12 md:py-16 scroll-mt-16">
+  <details class="group" open>
+    <summary class="cursor-pointer flex items-center text-2xl md:text-3xl font-bold text-slate-900 mb-8 select-none">
+      <svg class="w-6 h-6 mr-3 transition-transform group-open:rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+      🎨 Miscellaneous
+      <div class="section-title-bar h-1 w-16 ml-4 rounded-full opacity-80"></div>
+    </summary>
+    <div class="details-content">
+      {% include gallery.html %}
+    </div>
+  </details>
+</section>

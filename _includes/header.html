@@ -1,0 +1,21 @@
+<header class="fixed top-0 left-0 right-0 z-50 border-b" id="site-header">
+  <div class="max-w-[980px] mx-auto px-4 sm:px-6 flex items-center justify-between">
+    <a href="#about" class="text-slate-900 font-bold text-lg tracking-tight hover:text-primary-600 transition-colors">
+      {{ site.data.profile.name | default: site.title }}
+    </a>
+    
+    <nav class="hidden md:flex items-center space-x-5" id="main-nav">
+      <a href="#about" class="nav-link text-base font-medium transition-colors duration-200 text-slate-500 hover:text-slate-900" data-section="about">About</a>
+      <a href="#news" class="nav-link text-base font-medium transition-colors duration-200 text-slate-500 hover:text-slate-900" data-section="news">News</a>
+      <a href="#selected" class="nav-link text-base font-medium transition-colors duration-200 text-slate-500 hover:text-slate-900" data-section="selected">Selected</a>
+      <a href="#preprints" class="nav-link text-base font-medium transition-colors duration-200 text-slate-500 hover:text-slate-900" data-section="preprints">Preprints</a>
+      <a href="#publications" class="nav-link text-base font-medium transition-colors duration-200 text-slate-500 hover:text-slate-900" data-section="publications">Publications</a>
+      <a href="#misc" class="nav-link text-base font-medium transition-colors duration-200 text-slate-500 hover:text-slate-900" data-section="misc">Misc</a>
+    </nav>
+
+    <!-- Mobile Menu Indicator -->
+    <div class="md:hidden text-slate-500">
+      <span class="text-xs font-medium text-primary-600 uppercase" id="mobile-section-indicator">About</span>
+    </div>
+  </div>
+</header>
