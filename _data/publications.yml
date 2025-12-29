@@ -1,6 +1,37 @@
 # Publications Data
 
 # ==================== Preprints ====================
+- id: "wedlm-preprint"
+  title: "WeDLM: Reconciling Diffusion Language Models with Standard Causal Attention for Fast Inference"
+  authors:
+    - "WeDLM Team: Aiwei Liu*"
+    - "Minghua He*"
+    - "Shaoxun Zeng"
+    - "Sijun Zhang"
+    - "Linhao Zhang"
+    - "Chuhan Wu"
+    - "Wei Jia"
+    - "Yuan Liu"
+    - "Xiao Zhou"
+    - "Jie Zhou"
+  year: 2025
+  venue: "Technical Report"
+  venue_full: "WeChat AI, Tencent Technical Report"
+  type: "preprint"
+  tags: []
+  links:
+    - name: "Project"
+      url: "https://wedlm.github.io/"
+    - name: "Paper"
+      url: "https://github.com/Tencent/WeDLM/blob/main/paper/wedlm.pdf"
+    - name: "Code"
+      url: "https://github.com/tencent/WeDLM"
+    - name: "HuggingFace"
+      url: "https://huggingface.co/collections/tencent/wedlm"
+  tldr: "WeDLM is a diffusion language model framework built on standard causal attention via Topological Reordering, enabling prefix-cache compatibility and streaming parallel decoding. It achieves up to 3× speedup on reasoning benchmarks and 10× in low-entropy regimes compared to vLLM-served AR baselines—the first DLLM to outperform industrial AR engines in wall-clock speed."
+  teaser_image: "images/demo.gif"
+  selected: true
+
 - id: "dtree-rpo-preprint"
   title: "d-TreeRPO: Towards More Reliable Policy Optimization for Diffusion Language Models"
   authors:

@@ -1,5 +1,9 @@
 # News Data
 - date: "2025/12"
+  content: "We released WeDLM, the first diffusion LLM to outperform industrial AR engines (vLLM), achieving 3× speedup on reasoning and up to 10× in generation! 🚀"
+  highlight: true
+
+- date: "2025/12"
   content: "Three papers accepted to ICSE 2026!"
   highlight: false
 

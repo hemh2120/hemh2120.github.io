@@ -946,3 +946,19 @@ section details:not([open]) {
   display: block;
   margin-top: -20px;
 }
+
+
+/* HuggingFace link styling - yellow theme */
+.pub-link:has(svg + span:contains("HuggingFace")):hover {
+  color: #eab308;
+}
+
+/* HuggingFace link hover effect */
+a.pub-link[href*="huggingface"]:hover {
+  color: #eab308 !important;
+  background-color: rgba(234, 179, 8, 0.1);
+}
+
+a.pub-link[href*="huggingface"]:hover svg {
+  color: #eab308;
+}
