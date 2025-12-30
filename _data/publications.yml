@@ -24,7 +24,7 @@
     - name: "Project"
       url: "https://wedlm.github.io/"
     - name: "Paper"
-      url: "https://github.com/Tencent/WeDLM/blob/main/paper/wedlm.pdf"
+      url: "https://arxiv.org/abs/2512.22737"
     - name: "Code"
       url: "https://github.com/tencent/WeDLM"
     - name: "HuggingFace"
