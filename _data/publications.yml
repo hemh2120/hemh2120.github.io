@@ -20,6 +20,7 @@
   venue_full: "WeChat AI, Tencent Technical Report"
   type: "preprint"
   tags: []
+  award: "HuggingFace Trending Top 10"
   links:
     - name: "Project"
       url: "https://wedlm.github.io/"
