@@ -1,5 +1,58 @@
 # Publications Data
 
+# ==================== Publications ====================
+- id: "amer-rcl-icse2026"
+  title: "Agentic Memory Enhanced Recursive Reasoning for Root Cause Localization in Microservices"
+  authors:
+    - "Lingzhe Zhang"
+    - "Tong Jia"
+    - "Yunpeng Zhai"
+    - "Leyi Pan"
+    - "Chiming Duan"
+    - "Minghua He"
+    - "Mengxi Jia"
+    - "Ying Li"
+  year: 2026
+  venue: "ICSE-SEIP 2026"
+  venue_short: "ICSE-SEIP 2026"
+  venue_full: "IEEE/ACM International Conference on Software Engineering"
+  type: "conference"
+  tags:
+    - "CCF-A"
+  links:
+    - name: "Paper"
+      url: "https://arxiv.org/pdf/2601.02732"
+  tldr: "AMER-RCL employs a Recursive Reasoning RCL engine with multi-agent framework that performs recursive reasoning on each alert to progressively refine candidate causes, while Agentic Memory incrementally accumulates and reuses reasoning from prior alerts to reduce redundant exploration and lower inference latency."
+  teaser_image: "images/amer-rcl.png"
+  selected: false
+  award: null
+
+- id: "specrca-icse2026"
+  title: "Hypothesize-Then-Verify: Speculative Root Cause Analysis for Microservices with Pathwise Parallelism"
+  authors:
+    - "Lingzhe Zhang"
+    - "Tong Jia"
+    - "Yunpeng Zhai"
+    - "Leyi Pan"
+    - "Chiming Duan"
+    - "Minghua He"
+    - "Pei Xiao"
+    - "Ying Li"
+  year: 2026
+  venue: "ICSE-NIER 2026"
+  venue_short: "ICSE-NIER 2026"
+  venue_full: "IEEE/ACM International Conference on Software Engineering"
+  type: "conference"
+  tags:
+    - "CCF-A"
+  links:
+    - name: "Paper"
+      url: "https://arxiv.org/pdf/2601.02736"
+  tldr: "SpecRCA adopts a hypothesize-then-verify paradigm, leveraging a hypothesis drafting module to rapidly generate candidate root causes, and then employing a parallel root cause verifier to efficiently validate them, achieving superior accuracy and efficiency for scalable and interpretable RCA in complex microservice environments."
+  teaser_image: "images/specrca.png"
+  selected: false
+  award: null
+
 # ==================== Preprints ====================
 - id: "wedlm-preprint"
   title: "WeDLM: Reconciling Diffusion Language Models with Standard Causal Attention for Fast Inference"
