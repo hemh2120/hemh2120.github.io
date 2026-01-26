@@ -1,5 +1,9 @@
 # News Data
 - date: "2026/01"
+  content: "One paper accepted to ICLR 2026!"
+  highlight: false
+
+- date: "2026/01"
   content: "One paper accepted to WWW 2026!"
   highlight: false
 

@@ -222,7 +222,7 @@
   teaser_image: "images/duet.png"
   selected: false
 
-- id: "supclap-preprint"
+- id: "supclap-iclr2025"
   title: "SupCLAP: Controlling Optimization Trajectory Drift in Audio-Text Contrastive Learning with Support Vector Regularization"
   authors:
     - "Jiehui Luo"
@@ -234,17 +234,20 @@
     - "Aofan Liu"
     - "Zihan Xiong"
     - "Dongchao Yang"
-  year: 2025
-  venue: "Preprint"
-  venue_full: "arXiv Preprint"
-  type: "preprint"
-  tags: []
+  year: 2026
+  venue: "ICLR 2026"
+  venue_short: "ICLR 2026"
+  venue_full: "International Conference on Learning Representations"
+  type: "conference"
+  tags:
+    - "TSINGHUA-A"
   links:
     - name: "Paper"
       url: "https://arxiv.org/abs/2509.21033"
   tldr: "We propose Support Vector Regularization (SVR) to control optimization trajectory drift in contrastive language-audio pretraining by using an auxiliary support vector to harness rich information from negative samples while improving training stability."
   teaser_image: "images/supclap.png"
   selected: false
+  award: null
 
 - id: "rclagent-preprint"
   title: "Adaptive Root Cause Localization for Microservice Systems with Multi-Agent Recursion-of-Thought"
