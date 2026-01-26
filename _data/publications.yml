@@ -240,7 +240,7 @@
   venue_full: "International Conference on Learning Representations"
   type: "conference"
   tags:
-    - "TSINGHUA-A"
+    - "Tsinghua-A"
   links:
     - name: "Paper"
       url: "https://arxiv.org/abs/2509.21033"
