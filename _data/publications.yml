@@ -369,7 +369,7 @@
     - name: "Project"
       url: "https://logaction.github.io/"
     - name: "Paper"
-      url: "https://arxiv.org/abs/2510.03288"
+      url: "https://ieeexplore.ieee.org/abstract/document/11334497"
   tldr: "We propose LogAction, a framework that integrates transfer and active learning to achieve high-performance cross-system anomaly detection with minimal labeling effort."
   teaser_image: "images/logaction.png"
   selected: false
@@ -397,7 +397,7 @@
     - "CCF-A"
   links:
     - name: "Paper"
-      url: "https://arxiv.org/abs/2511.05862"
+      url: "https://ieeexplore.ieee.org/abstract/document/11334611/"
   tldr: "We propose CoorLog, a framework using an adaptive coordinator for efficient and generalizable log anomaly detection, especially in evolving software systems."
   teaser_image: "images/coorlog.png"
   selected: false
@@ -427,7 +427,7 @@
   award: "Directly Accept (113/1190, Top 9.5%)"
   links:
     - name: "Paper"
-      url: "https://arxiv.org/abs/2509.24364"
+      url: "https://ieeexplore.ieee.org/abstract/document/11334674"
     - name: "Code"
       url: "https://github.com/hemh02/Chimera"
   tldr: "We propose Chimera, an end-to-end framework that unifies anomaly detection and root cause localization through interactive multi-task learning and bidirectional knowledge transfer."
@@ -455,7 +455,7 @@
     - "CCF-A"
   links:
     - name: "Paper"
-      url: "https://arxiv.org/abs/2509.24352"
+      url: "https://ieeexplore.ieee.org/abstract/document/11334223"
   tldr: "We introduce 'diagnostic faithfulness' as a key metric and propose FaithLog, a system that enhances model trustworthiness via a causality-guided attention mechanism."
   teaser_image: "images/faithlog.png"
   selected: false
