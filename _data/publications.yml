@@ -1,6 +1,28 @@
 # Publications Data
 
 # ==================== Publications ====================
+- id: "varparser-www2026"
+  title: "VarParser: Variable-Centric Log Parsing with Large Language Models"
+  authors:
+    - "Jinrui Sun"
+    - "Tong Jia"
+    - "Minghua He"
+    - "Ying Li"
+  year: 2026
+  venue: "WWW 2026"
+  venue_short: "WWW 2026"
+  venue_full: "The Web Conference"
+  type: "conference"
+  tags:
+    - "CCF-A"
+  links:
+    - name: "Paper"
+      url: "#"
+  tldr: "VarParser introduces a variable-centric log parsing strategy that leverages variable information to improve parsing accuracy and efficiency through variable contribution sampling, variable-centric parsing cache, and adaptive variable-aware in-context learning."
+  teaser_image: "images/varparser.png"
+  selected: false
+  award: null
+
 - id: "amer-rcl-icse2026"
   title: "Agentic Memory Enhanced Recursive Reasoning for Root Cause Localization in Microservices"
   authors:

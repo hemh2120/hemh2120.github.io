@@ -7,6 +7,10 @@
   content: "One paper accepted to WWW 2026!"
   highlight: false
 
+- date: "2026/01"
+  content: "One paper accepted to ICSE-Poster 2026!"
+  highlight: false
+
 - date: "2025/12"
   content: "We released WeDLM, the first diffusion LLM to outperform industrial AR engines (vLLM), achieving 3× speedup on reasoning and up to 10× in generation! 🚀"
   highlight: true
