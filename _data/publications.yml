@@ -450,10 +450,10 @@
     - "Directly Accept"
   award: "Directly Accept (113/1190, Top 9.5%)"
   links:
+    - name: "Project"
+      url: "https://chimera4log.github.io/"
     - name: "Paper"
       url: "https://ieeexplore.ieee.org/abstract/document/11334674"
-    - name: "Website"
-      url: "https://chimera4log.github.io/"
     - name: "Code"
       url: "https://github.com/hemh02/Chimera"
   tldr: "We propose Chimera, an end-to-end framework that unifies anomaly detection and root cause localization through interactive multi-task learning and bidirectional knowledge transfer."
