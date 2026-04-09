@@ -1,6 +1,73 @@
 # Publications Data
 
 # ==================== Publications ====================
+- id: "dtree-rpo-preprint"
+  title: "d-TreeRPO: Towards More Reliable Policy Optimization for Diffusion Language Models"
+  authors:
+    - "Leyi Pan"
+    - "Shuchang Tao"
+    - "Yunpeng Zhai"
+    - "Zheyu Fu"
+    - "Liancheng Fang"
+    - "Minghua He"
+    - "Lingzhe Zhang"
+    - "Zhaoyang Liu"
+    - "Bolin Ding"
+    - "Aiwei Liu"
+    - "Lijie Wen"
+  year: 2026
+  venue: "ACL 2026"
+  venue_short: "ACL 2026"
+  venue_full: "Annual Meeting of the Association for Computational Linguistics"
+  type: "conference"
+  tags:
+    - "CCF-A"
+  links:
+    - name: "Paper"
+      url: "https://arxiv.org/pdf/2512.09675"
+  tldr: "We propose d-TreeRPO, a reliable RL framework for diffusion LLMs that leverages tree-structured rollouts and bottom-up advantage computation with verifiable rewards, achieving significant gains on reasoning benchmarks."
+  teaser_image: "images/d-TreeRPO.png"
+  selected: false
+  award: null
+
+- id: "duet-preprint"
+  title: "Duet: Joint Exploration of User–Item Profiles"
+  authors:
+    - "Yue Chen"
+    - "Lu Wang"
+    - "Minjie Hong"
+    - "Pu Zhao"
+    - "Fangkai Yang"
+    - "Yifei Dong"
+    - "Minghua He"
+    - "Nan Hu"
+    - "Jianjin Zhang"
+    - "Zhiwei Dai"
+    - "Yuefeng Zhan"
+    - "Weihao Han"
+    - "Hao Sun"
+    - "Qingwei Lin"
+    - "Weiwei Deng"
+    - "Feng Sun"
+    - "Qi Zhang"
+    - "Saravan Rajmohan"
+    - "Dongmei Zhang"
+  year: 2026
+  venue: "ACL 2026 Findings"
+  venue_short: "ACL 2026 Findings"
+  venue_full: "Findings of the Annual Meeting of the Association for Computational Linguistics"
+  type: "conference"
+  tags:
+    - "CCF-A"
+  links:
+    - name: "Project"
+      url: "https://hemh2120.github.io/"
+  tldr: "We propose DUET, a closed-loop framework for joint exploration of user-item textual profiles in recommendation systems. It distills raw data into concise cues, expands them into rich profiles via self-prompt construction, and optimizes profiles jointly with reinforcement learning using downstream recommendation feedback, while enabling interpretable LLM-compatible representations."
+  teaser_image: "images/duet.png"
+  selected: false
+  award: null
+
+
 - id: "varparser-www2026"
   title: "VarParser: Variable-Centric Log Parsing with Large Language Models"
   authors:
@@ -15,6 +82,7 @@
   type: "conference"
   tags:
     - "CCF-A"
+    - "Oral"
   links:
     - name: "Paper"
       url: "https://arxiv.org/pdf/2601.22676"
@@ -23,7 +91,68 @@
   tldr: "VarParser introduces a variable-centric log parsing strategy that leverages variable information to improve parsing accuracy and efficiency through variable contribution sampling, variable-centric parsing cache, and adaptive variable-aware in-context learning."
   teaser_image: "images/varparser.png"
   selected: false
+  award: "Oral Presentation (317/3370, Top 9.4%)"
+
+- id: "runtimeslicer-fse2026"
+  title: "RuntimeSlicer: Towards Generalizable Unified Runtime State Representation for Failure Management"
+  authors:
+    - "Lingzhe Zhang"
+    - "Tong Jia"
+    - "Weijie Hong"
+    - "Mingyu Wang"
+    - "Chiming Duan"
+    - "Minghua He"
+    - "Rongqian Wang"
+    - "Xi Peng"
+    - "Meiling Wang"
+    - "Gong Zhang"
+    - "Renhai Chen"
+    - "Ying Li"
+  year: 2026
+  venue: "FSE-IVR 2026"
+  venue_short: "FSE-IVR 2026"
+  venue_full: "ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering"
+  type: "conference"
+  tags:
+    - "CCF-A"
+  links:
+    - name: "Paper"
+      url: "https://arxiv.org/pdf/2603.21495"
+  tldr: "RuntimeSlicer introduces a task-agnostic unified runtime state representation that jointly encodes metrics, traces, and logs, enabling lightweight state-aware adaptation for failure management tasks without redesigning modality-specific pipelines."
+  teaser_image: "images/RuntimeSlicer.png"
+  selected: false
   award: null
+
+- id: "eager-fse2026"
+  title: "Efficient Failure Management for Multi-Agent Systems with Reasoning Trace Representation"
+  authors:
+    - "Lingzhe Zhang"
+    - "Tong Jia"
+    - "Mingyu Wang"
+    - "Weijie Hong"
+    - "Chiming Duan"
+    - "Minghua He"
+    - "Rongqian Wang"
+    - "Xi Peng"
+    - "Meiling Wang"
+    - "Gong Zhang"
+    - "Renhai Chen"
+    - "Ying Li"
+  year: 2026
+  venue: "FSE-IVR 2026"
+  venue_short: "FSE-IVR 2026"
+  venue_full: "ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering"
+  type: "conference"
+  tags:
+    - "CCF-A"
+  links:
+    - name: "Paper"
+      url: "https://arxiv.org/pdf/2603.21522"
+  tldr: "EAGER leverages reasoning trace representation and historical failure patterns in multi-agent systems to support efficient step-wise failure detection, diagnosis, and reflexive mitigation."
+  teaser_image: "images/eager.png"
+  selected: false
+  award: null
+
 
 - id: "amer-rcl-icse2026"
   title: "Agentic Memory Enhanced Recursive Reasoning for Root Cause Localization in Microservices"
@@ -111,32 +240,6 @@
   teaser_image: "images/demo.gif"
   selected: true
 
-- id: "dtree-rpo-preprint"
-  title: "d-TreeRPO: Towards More Reliable Policy Optimization for Diffusion Language Models"
-  authors:
-    - "Leyi Pan"
-    - "Shuchang Tao"
-    - "Yunpeng Zhai"
-    - "Zheyu Fu"
-    - "Liancheng Fang"
-    - "Minghua He"
-    - "Lingzhe Zhang"
-    - "Zhaoyang Liu"
-    - "Bolin Ding"
-    - "Aiwei Liu"
-    - "Lijie Wen"
-  year: 2025
-  venue: "Preprint"
-  venue_full: "arXiv Preprint"
-  type: "preprint"
-  tags: []
-  links:
-    - name: "Paper"
-      url: "https://arxiv.org/pdf/2512.09675"
-  tldr: "We propose d-TreeRPO, a reliable RL framework for diffusion LLMs that leverages tree-structured rollouts and bottom-up advantage computation with verifiable rewards, achieving significant gains on reasoning benchmarks."
-  teaser_image: "images/d-TreeRPO.png"
-  selected: false
-
 - id: "parallel-survey-preprint"
   title: "A Survey on Parallel Text Generation: From Parallel Decoding to Diffusion Language Models"
   authors:
@@ -210,40 +313,6 @@
       url: "https://arxiv.org/abs/2510.22986"
   tldr: "We present CodeAD, a novel framework that automatically synthesizes lightweight Python rule functions for LogAD using LLMs, achieving 3.6% F1 improvement while processing datasets 4x faster at a fraction of the cost."
   teaser_image: "images/codead.png"
-  selected: false
-
-- id: "duet-preprint"
-  title: "Duet: Joint Exploration of User–Item Profiles"
-  authors:
-    - "Yue Chen"
-    - "Lu Wang"
-    - "Minjie Hong"
-    - "Pu Zhao"
-    - "Fangkai Yang"
-    - "Yifei Dong"
-    - "Minghua He"
-    - "Nan Hu"
-    - "Jianjin Zhang"
-    - "Zhiwei Dai"
-    - "Yuefeng Zhan"
-    - "Weihao Han"
-    - "Hao Sun"
-    - "Qingwei Lin"
-    - "Weiwei Deng"
-    - "Feng Sun"
-    - "Qi Zhang"
-    - "Saravan Rajmohan"
-    - "Dongmei Zhang"
-  year: 2025
-  venue: "Preprint"
-  venue_full: "arXiv Preprint"
-  type: "preprint"
-  tags: []
-  links:
-    - name: "Project"
-      url: "https://hemh2120.github.io/"
-  tldr: "We propose DUET, a closed-loop framework for joint exploration of user-item textual profiles in recommendation systems. It distills raw data into concise cues, expands them into rich profiles via self-prompt construction, and optimizes profiles jointly with reinforcement learning using downstream recommendation feedback, while enabling interpretable LLM-compatible representations."
-  teaser_image: "images/duet.png"
   selected: false
 
 - id: "supclap-iclr2025"

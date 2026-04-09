@@ -1,4 +1,16 @@
 # News Data
+- date: "2026/04"
+  content: "One paper selected to WWW 2026 Oral Presentation! (Top 9.4%)"
+  highlight: false
+
+- date: "2026/04"
+  content: "two papers accepted to ACL 2026!"
+  highlight: false
+
+- date: "2026/03"
+  content: "four papers accepted to FSE 2026!"
+  highlight: false
+
 - date: "2026/01"
   content: "One paper accepted to ICLR 2026!"
   highlight: false
