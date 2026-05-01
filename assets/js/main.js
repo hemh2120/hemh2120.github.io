@@ -96,6 +96,11 @@ function enhanceNewsContent() {
       /\(Oral Presentation, Top (\d+\.?\d*)%\)/g,
       '<span class="achievement-badge">Oral Presentation, Top $1%</span>'
     );
+
+    content = content.replace(
+      /\(Spotlight Paper, Top (\d+\.?\d*)%\)/g,
+      '<span class="achievement-badge">Spotlight Paper, Top $1%</span>'
+    );
     
     // Conference names are no longer highlighted - removed
     

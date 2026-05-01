@@ -24,7 +24,8 @@
   type: "conference"
   tags:
     - "CCF-A"
-  award: "Spotlight Paper (536/23918, Top 2.2%)"
+    - "Technical Report"
+  award: "Spotlight Paper (536/23918, Top 2.2%); Huggingface Trending Top 5"
   links:
     - name: "Project"
       url: "https://wedlm.github.io/"
