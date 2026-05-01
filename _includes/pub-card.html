@@ -44,8 +44,6 @@ Usage: {% include pub-card.html pub=publication %}
         {% for tag in include.pub.tags %}
           {% if tag contains "CCF-A" or tag contains "CCF-B" or tag contains "Tsinghua-A" %}
             <span class="venue-rank-badge">{{ tag }}</span>
-          {% elsif tag == "Technical Report" %}
-            <span class="technical-report-badge">{{ tag }}</span>
           {% endif %}
         {% endfor %}
         {% if include.pub.venue_short %}
@@ -53,6 +51,11 @@ Usage: {% include pub-card.html pub=publication %}
         {% elsif include.pub.venue %}
           <span class="venue-short-badge">{{ include.pub.venue }}</span>
         {% endif %}
+        {% for tag in include.pub.tags %}
+          {% if tag == "Technical Report" %}
+            <span class="venue-short-badge technical-report-badge">{{ tag }}</span>
+          {% endif %}
+        {% endfor %}
         {% if include.pub.award %}
           {% assign award_items = include.pub.award | split: ";" %}
           {% for award_item in award_items %}
