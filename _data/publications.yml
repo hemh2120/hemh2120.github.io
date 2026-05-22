@@ -6,7 +6,7 @@
 - id: "wedlm-preprint"
   title: "WeDLM: Reconciling Diffusion Language Models with Standard Causal Attention for Fast Inference"
   authors:
-    - "WeDLM Team:"
+    - "WeLM Team:"
     - "Aiwei Liu*"
     - "Minghua He*"
     - "Shaoxun Zeng"

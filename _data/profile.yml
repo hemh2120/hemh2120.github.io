@@ -12,7 +12,7 @@ tags:
 bio: |
   I am currently a graduate student at <a href="https://english.pku.edu.cn/" class="bio-link">Peking University</a>, the National Engineering Research Center for Software Engineering. 
   
-  I've also had great experiences working at <a href="https://www.tencent.com/en-us/" class="bio-link">WeChat AI</a>, <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/" class="bio-link">Microsoft Research Asia</a> and <a href="https://www.alibabagroup.com/en-US" class="bio-link">Alibaba Group</a>. 
+  I've also had great experiences working at <a href="https://www.tencent.com/en-us/" class="bio-link">WeLM Team, WeChat AI</a>, <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/" class="bio-link">Microsoft Research Asia</a> and <a href="https://www.alibabagroup.com/en-US" class="bio-link">Alibaba Group</a>. 
   
   My research interest is broadly in <strong>Foundation Models</strong> and <strong>Reliable Infrastructure</strong>. 
   
@@ -22,6 +22,10 @@ bio: |
   My research vision is to construct a virtuous cycle between AI and Systems. I am dedicated to bridging the gap between theoretical AI capabilities and real-world system requirements, striving to build intelligent systems that are not only powerful, but also reliable and efficient at scale.
 
 
+
+opportunity_banner:
+  enabled: true
+  text: "I am actively seeking PhD programs and research / industry positions for Fall 2027. Feel free to reach out!"
 
 highlights: |
   5+ First or Co-first Author Papers at CCF-A Conferences 

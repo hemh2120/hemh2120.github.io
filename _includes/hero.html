@@ -28,6 +28,14 @@
     <p class="text-slate-600 leading-relaxed text-base md:text-lg max-w-2xl">
       {{ profile.bio }}
     </p>
+
+    {% if profile.opportunity_banner.enabled %}
+    <!-- Opportunity banner -->
+    <div class="flex items-start gap-2 p-3 bg-amber-50 border-l-4 border-amber-500 rounded-r-lg text-xs md:text-sm text-slate-700">
+      <span class="shrink-0 mt-0.5" aria-hidden="true">⭐</span>
+      <span>{{ profile.opportunity_banner.text }}</span>
+    </div>
+    {% endif %}
     
     <!-- Highlights -->
     <div class="p-4 bg-primary-50 border-l-4 border-primary-500 rounded-r-lg text-sm md:text-base text-slate-700">
