@@ -30,7 +30,7 @@ Usage: {% include pub-card.html pub=publication %}
       {% for author in include.pub.authors %}
         {% if author contains "Minghua He" %}
           <span class="font-bold text-slate-900 underline decoration-slate-300 underline-offset-2">{{ author }}</span>{% unless forloop.last %}, {% endunless %}
-        {% elsif author == "WeDLM Team:" %}
+        {% elsif author == "WeLM Team:" %}
           <span class="font-semibold text-primary-600">{{ author }}</span> 
         {% else %}
           {{ author }}{% unless forloop.last %}, {% endunless %}
