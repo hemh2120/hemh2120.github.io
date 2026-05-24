@@ -4,7 +4,7 @@
   <ul class="space-y-3">
     {% for item in news %}
     {% assign news_content = item.content %}
-    {% assign news_content = news_content | replace: "(Spotlight Paper, Top 2.2%)", "<span class='achievement-badge'>Spotlight Paper, Top 2.2%</span>" %}
+    {% assign news_content = news_content | replace: "(Oral and Spotlight, Top 0.7%)", "<span class='achievement-badge'>Oral and Spotlight, Top 0.7%</span>" %}
     {% assign news_content = news_content | replace: "(Oral Presentation, Top 9.4%)", "<span class='achievement-badge'>Oral Presentation, Top 9.4%</span>" %}
     {% assign news_content = news_content | replace: "(Oral Presentation, Top 4.3%)", "<span class='achievement-badge'>Oral Presentation, Top 4.3%</span>" %}
     {% assign news_content = news_content | replace: "(Directly Accept, Top 9.5%)", "<span class='achievement-badge'>Directly Accept, Top 9.5%</span>" %}

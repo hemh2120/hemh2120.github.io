@@ -102,6 +102,11 @@ function enhanceNewsContent() {
       '<span class="achievement-badge">Spotlight Paper, Top $1%</span>'
     );
     
+    content = content.replace(
+      /\(Oral and Spotlight, Top (\d+\.?\d*)%\)/g,
+      '<span class="achievement-badge">Oral and Spotlight, Top $1%</span>'
+    );
+
     // Conference names are no longer highlighted - removed
     
     if (content !== item.innerHTML) {
