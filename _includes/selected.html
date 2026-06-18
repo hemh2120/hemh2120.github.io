@@ -6,7 +6,7 @@ Displays only publications marked as selected in specified order
 {% assign publications = site.data.publications %}
 
 {% comment %} Define the order of selected publications {% endcomment %}
-{% assign selected_order = "wedlm-preprint,execoder-emnlp2025,chimera-ase2025,midlog-icse2025" | split: "," %}
+{% assign selected_order = "wedlm-preprint,execoder-emnlp2025,bifrost-ase2026,chimera-ase2025,midlog-icse2025" | split: "," %}
 
 <div class="space-y-6">
   {% for id in selected_order %}

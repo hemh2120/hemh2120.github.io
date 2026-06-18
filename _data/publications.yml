@@ -3,6 +3,37 @@
 # ==================== Publications ====================
 
 
+- id: "bifrost-ase2026"
+  title: "Bifrost: Empowering Pretrained Language Model with Fallibility Representation for Log-based Fault Diagnosis"
+  authors:
+    - "Minghua He"
+    - "Tong Jia"
+    - "Lingzhe Zhang"
+    - "Chiming Duan"
+    - "Xinlong Zhao"
+    - "Leyi Pan"
+    - "Cheng Wang"
+    - "Kangjin Wang"
+    - "Yinghao Yu"
+    - "Liping Zhang"
+    - "Yifan Wu"
+    - "Ying Li"
+  year: 2026
+  venue: "ASE 2026"
+  venue_short: "ASE 2026"
+  venue_full: "IEEE/ACM International Conference on Automated Software Engineering"
+  type: "conference"
+  tags:
+    - "CCF-A"
+    - "Directly Accept"
+  links:
+    - name: "Code"
+      url: "https://github.com/hemh02/Bifrost"
+  tldr: "We propose Bifrost, a self-supervised contrastive learning method that teaches PLMs to capture multi-level fallibility representations in logs, outperforming existing PLMs on anomaly detection, root cause localization, and fault identification."
+  teaser_image: "images/bifrost.png"
+  selected: true
+  award: "Directly Accept (115/1304, Top 8.8%)"
+
 - id: "wedlm-preprint"
   title: "WeDLM: Reconciling Diffusion Language Models with Standard Causal Attention for Fast Inference"
   authors:
@@ -247,6 +278,26 @@
 
 
 # ==================== Preprints ====================
+- id: "near-free-parallelism-preprint"
+  title: "How Much Parallelism Is \"Free\"? A Principle of Near-Free Parallelism for Parallel Decoding"
+  authors:
+    - "Minghua He"
+    - "Lingzhe Zhang"
+    - "Yuan Liu"
+    - "Xiao Zhou"
+    - "Aiwei Liu"
+  year: 2026
+  venue: "Preprint"
+  venue_full: "arXiv preprint arXiv:2605.30851"
+  type: "preprint"
+  tags: []
+  links:
+    - name: "Paper"
+      url: "https://arxiv.org/abs/2605.30851"
+  tldr: "We introduce Near-Free Parallelism (NFP), the maximum decode positions executable at near-free latency, isolating system-side cost from algorithmic speedups. A principle predicting NFP from hardware balance and kernel granularity reveals that idle-compute intuition can over-predict by up to 23× on Dense and MoE models."
+  teaser_image: "images/near_free_law.png"
+  selected: false
+
 - id: "parallel-survey-preprint"
   title: "A Survey on Parallel Text Generation: From Parallel Decoding to Diffusion Language Models"
   authors:
