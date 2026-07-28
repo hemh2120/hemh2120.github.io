@@ -27,6 +27,8 @@
     - "CCF-A"
     - "Directly Accept"
   links:
+    - name: "Paper"
+      url: "http://arxiv.org/abs/2607.23169"
     - name: "Code"
       url: "https://github.com/hemh02/Bifrost"
   tldr: "We propose Bifrost, a self-supervised contrastive learning method that teaches PLMs to capture multi-level fallibility representations in logs, outperforming existing PLMs on anomaly detection, root cause localization, and fault identification."
