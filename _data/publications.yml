@@ -3,6 +3,30 @@
 # ==================== Publications ====================
 
 
+- id: "near-free-parallelism-emnlp2026"
+  title: "How Much Parallelism Is \"Free\"? A Principle of Near-Free Parallelism for Parallel Decoding"
+  authors:
+    - "Minghua He"
+    - "Lingzhe Zhang"
+    - "Yuan Liu"
+    - "Xiao Zhou"
+    - "Aiwei Liu"
+  year: 2026
+  venue: "EMNLP 2026 Findings"
+  venue_short: "EMNLP 2026 Findings"
+  venue_full: "Findings of the Conference on Empirical Methods in Natural Language Processing"
+  type: "conference"
+  tags:
+    - "Tsinghua-A"
+  links:
+    - name: "Paper"
+      url: "https://arxiv.org/abs/2605.30851"
+  tldr: "We introduce Near-Free Parallelism (NFP), the maximum decode positions executable at near-free latency, isolating system-side cost from algorithmic speedups. A principle predicting NFP from hardware balance and kernel granularity reveals that idle-compute intuition can over-predict by up to 23× on Dense and MoE models."
+  teaser_image: "images/near_free_law.png"
+  selected: false
+  award: null
+
+
 - id: "bifrost-ase2026"
   title: "Bifrost: Empowering Pretrained Language Model with Fallibility Representation for Log-based Fault Diagnosis"
   authors:
@@ -136,29 +160,6 @@
       url: "https://hemh2120.github.io/"
   tldr: "We propose DUET, a closed-loop framework for joint exploration of user-item textual profiles in recommendation systems. It distills raw data into concise cues, expands them into rich profiles via self-prompt construction, and optimizes profiles jointly with reinforcement learning using downstream recommendation feedback, while enabling interpretable LLM-compatible representations."
   teaser_image: "images/duet.png"
-  selected: false
-  award: null
-
-
-- id: "near-free-parallelism-emnlp2026"
-  title: "How Much Parallelism Is \"Free\"? A Principle of Near-Free Parallelism for Parallel Decoding"
-  authors:
-    - "Minghua He"
-    - "Lingzhe Zhang"
-    - "Yuan Liu"
-    - "Xiao Zhou"
-    - "Aiwei Liu"
-  year: 2026
-  venue: "EMNLP 2026 Findings"
-  venue_short: "EMNLP 2026 Findings"
-  venue_full: "Findings of the Conference on Empirical Methods in Natural Language Processing"
-  type: "conference"
-  tags: []
-  links:
-    - name: "Paper"
-      url: "https://arxiv.org/abs/2605.30851"
-  tldr: "We introduce Near-Free Parallelism (NFP), the maximum decode positions executable at near-free latency, isolating system-side cost from algorithmic speedups. A principle predicting NFP from hardware balance and kernel granularity reveals that idle-compute intuition can over-predict by up to 23× on Dense and MoE models."
-  teaser_image: "images/near_free_law.png"
   selected: false
   award: null
 
