@@ -140,6 +140,29 @@
   award: null
 
 
+- id: "near-free-parallelism-emnlp2026"
+  title: "How Much Parallelism Is \"Free\"? A Principle of Near-Free Parallelism for Parallel Decoding"
+  authors:
+    - "Minghua He"
+    - "Lingzhe Zhang"
+    - "Yuan Liu"
+    - "Xiao Zhou"
+    - "Aiwei Liu"
+  year: 2026
+  venue: "EMNLP 2026 Findings"
+  venue_short: "EMNLP 2026 Findings"
+  venue_full: "Findings of the Conference on Empirical Methods in Natural Language Processing"
+  type: "conference"
+  tags: []
+  links:
+    - name: "Paper"
+      url: "https://arxiv.org/abs/2605.30851"
+  tldr: "We introduce Near-Free Parallelism (NFP), the maximum decode positions executable at near-free latency, isolating system-side cost from algorithmic speedups. A principle predicting NFP from hardware balance and kernel granularity reveals that idle-compute intuition can over-predict by up to 23× on Dense and MoE models."
+  teaser_image: "images/near_free_law.png"
+  selected: false
+  award: null
+
+
 - id: "varparser-www2026"
   title: "VarParser: Variable-Centric Log Parsing with Large Language Models"
   authors:
@@ -280,26 +303,6 @@
 
 
 # ==================== Preprints ====================
-- id: "near-free-parallelism-preprint"
-  title: "How Much Parallelism Is \"Free\"? A Principle of Near-Free Parallelism for Parallel Decoding"
-  authors:
-    - "Minghua He"
-    - "Lingzhe Zhang"
-    - "Yuan Liu"
-    - "Xiao Zhou"
-    - "Aiwei Liu"
-  year: 2026
-  venue: "Preprint"
-  venue_full: "arXiv preprint arXiv:2605.30851"
-  type: "preprint"
-  tags: []
-  links:
-    - name: "Paper"
-      url: "https://arxiv.org/abs/2605.30851"
-  tldr: "We introduce Near-Free Parallelism (NFP), the maximum decode positions executable at near-free latency, isolating system-side cost from algorithmic speedups. A principle predicting NFP from hardware balance and kernel granularity reveals that idle-compute intuition can over-predict by up to 23× on Dense and MoE models."
-  teaser_image: "images/near_free_law.png"
-  selected: false
-
 - id: "parallel-survey-preprint"
   title: "A Survey on Parallel Text Generation: From Parallel Decoding to Diffusion Language Models"
   authors:
