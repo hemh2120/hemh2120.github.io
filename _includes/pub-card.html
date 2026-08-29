@@ -21,6 +21,8 @@ Award chips are the only colored element; venue and rank chips stay neutral.
           <span class="me">{{ author }}</span>{% unless forloop.last %}, {% endunless %}
         {%- elsif author == "WeLM Team:" -%}
           <span class="pub-team">{{ author }}</span>{{ " " }}
+        {%- elsif author == "RoboDojo Team" -%}
+          <span class="pub-team">{{ author }}</span>{% unless forloop.last %}, {% endunless %}
         {%- else -%}
           {{ author }}{% unless forloop.last %}, {% endunless %}
         {%- endif -%}

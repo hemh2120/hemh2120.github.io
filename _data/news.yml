@@ -4,6 +4,10 @@
   highlight: true
 
 - date: "2026/06"
+  content: "One paper accepted to IEEE TDSC!"
+  highlight: false
+
+- date: "2026/06"
   content: "One paper accepted to ASE 2026 (Directly Accept, Top 8.8%), see you in Munich! 🇩🇪"
   highlight: true
 

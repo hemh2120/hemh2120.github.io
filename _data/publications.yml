@@ -97,6 +97,31 @@
   selected: true
 
 
+- id: "rclagent-tdsc"
+  title: "Towards In-Depth Root Cause Localization for Microservices with Multi-Agent Recursion-of-Thought"
+  authors:
+    - "Lingzhe Zhang"
+    - "Tong Jia"
+    - "Kangjin Wang"
+    - "Weijie Hong"
+    - "Chiming Duan"
+    - "Minghua He"
+    - "Ying Li"
+  year: 2026
+  venue: "IEEE TDSC"
+  venue_short: "IEEE TDSC"
+  venue_full: "IEEE Transactions on Dependable and Secure Computing"
+  type: "conference"
+  tags:
+    - "CCF-A"
+  links:
+    - name: "Paper"
+      url: "https://ieeexplore.ieee.org/document/11575089/"
+  tldr: "Inspired by how human SREs operate, we introduce RCLAgent, a multi-agent recursion-of-thought framework that accurately localizes the root cause of failures in microservice systems using only a single request."
+  teaser_image: "images/RCLAgent.png"
+  selected: false
+  award: null
+
 - id: "dtree-rpo-preprint"
   title: "d-TreeRPO: Towards More Reliable Policy Optimization for Diffusion Language Models"
   authors:
@@ -219,6 +244,32 @@
   selected: false
   award: null
 
+- id: "aims-fse2026"
+  title: "AIMS: A Content-Aware Resource Management Approach for AI Assistant Systems"
+  authors:
+    - "Chiming Duan"
+    - "Tong Jia"
+    - "Minghua He"
+    - "Pei Xiao"
+    - "Lingzhe Zhang"
+    - "Zhewei Zhong"
+    - "Xin Zhang"
+    - "Ying Li"
+  year: 2026
+  venue: "FSE-IVR 2026"
+  venue_short: "FSE-IVR 2026"
+  venue_full: "ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering"
+  type: "conference"
+  tags:
+    - "CCF-A"
+  links:
+    - name: "Paper"
+      url: "https://dl.acm.org/doi/pdf/10.1145/3803437.3805562"
+  tldr: "AIMS is a content-aware resource management approach for AI assistant systems that leverages the content of user requests to inform resource allocation decisions, improving serving efficiency over content-agnostic strategies."
+  teaser_image: "images/AIMS.png"
+  selected: false
+  award: null
+
 - id: "eager-fse2026"
   title: "Efficient Failure Management for Multi-Agent Systems with Reasoning Trace Representation"
   authors:
@@ -304,6 +355,31 @@
 
 
 # ==================== Preprints ====================
+- id: "robodojo-preprint"
+  title: "RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies"
+  authors:
+    - "RoboDojo Team"
+  year: 2026
+  venue: "Preprint"
+  venue_full: "arXiv Preprint"
+  type: "preprint"
+  tags:
+    - "Technical Report"
+  links:
+    - name: "Paper"
+      url: "https://arxiv.org/pdf/2607.04434"
+    - name: "Project"
+      url: "https://robodojo-benchmark.com/"
+    - name: "Code"
+      url: "https://github.com/RoboDojo-Benchmark/RoboDojo"
+    - name: "Document"
+      url: "https://robodojo-benchmark.com/doc/"
+    - name: "Leaderboard"
+      url: "https://robodojo-benchmark.com/LeaderBoard"
+  tldr: "RoboDojo is a unified benchmark for generalist robot manipulation policies spanning 42 simulation tasks and 18 real-world tasks, evaluating generalization, memory, precision, long-horizon execution, and open-vocabulary instruction following through a single integration layer with a reproducible remote real-world evaluation system and public leaderboard."
+  teaser_image: "images/robodojo.png"
+  selected: false
+
 - id: "parallel-survey-preprint"
   title: "A Survey on Parallel Text Generation: From Parallel Decoding to Diffusion Language Models"
   authors:
@@ -405,28 +481,6 @@
   teaser_image: "images/supclap.png"
   selected: false
   award: null
-
-- id: "rclagent-preprint"
-  title: "Adaptive Root Cause Localization for Microservice Systems with Multi-Agent Recursion-of-Thought"
-  authors:
-    - "Lingzhe Zhang"
-    - "Tong Jia"
-    - "Kangjin Wang"
-    - "Weijie Hong"
-    - "Chiming Duan"
-    - "Minghua He"
-    - "Ying Li"
-  year: 2025
-  venue: "Preprint"
-  venue_full: "arXiv Preprint"
-  type: "preprint"
-  tags: []
-  links:
-    - name: "Paper"
-      url: "https://arxiv.org/abs/2508.20370"
-  tldr: "Inspired by how human SREs operate, we introduce RCLAgent, a multi-agent recursion-of-thought framework that accurately localizes the root cause of failures in microservice systems using only a single request."
-  teaser_image: "images/RCLAgent.png"
-  selected: false
 
 - id: "warriormath-preprint"
   title: "WarriorMath: Enhancing the Mathematical Ability of Large Language Models with a Defect-aware Framework"
