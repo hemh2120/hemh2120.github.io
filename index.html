@@ -3,117 +3,77 @@ layout: default
 title: Home
 ---
 
-<!-- About Section -->
-<section id="about" class="py-12 md:py-16 scroll-mt-16">
+<!-- About -->
+<section id="about" class="section section-hero">
   {% include hero.html %}
 </section>
 
-<!-- News Section -->
-<section id="news" class="py-12 md:py-16 scroll-mt-16">
-  <details class="group" open>
-    <summary class="cursor-pointer flex items-center text-2xl md:text-3xl font-bold text-slate-900 mb-8 select-none">
-      <svg class="w-6 h-6 mr-3 transition-transform group-open:rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-      </svg>
-      🔥 News
-      <div class="section-title-bar h-1 w-16 ml-4 rounded-full opacity-80"></div>
-    </summary>
-    <div class="details-content">
-      {% include news.html %}
-    </div>
-  </details>
+<!-- News -->
+<section id="news" class="section">
+  <h2 class="section-title"><span class="t-emoji" aria-hidden="true">🔥</span><span class="grad-text">News</span></h2>
+  {% include news.html %}
 </section>
 
-<!-- Research Section -->
-<section id="research" class="py-12 md:py-16 scroll-mt-16 pb-2">
-  <details class="group" open>
-    <summary class="cursor-pointer flex items-center text-2xl md:text-3xl font-bold text-slate-900 mb-8 select-none">
-      <svg class="w-6 h-6 mr-3 transition-transform group-open:rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-      </svg>
-      📝 Research
-      <div class="section-title-bar h-1 w-16 ml-4 rounded-full opacity-80"></div>
-    </summary>
-    <div class="details-content">
-      {% include research.html %}
-    </div>
-  </details>
-</section>
+<!-- Publications (tabbed) -->
+<section id="publications" class="section">
+  {% assign publications = site.data.publications %}
+  {% assign conference_pubs = publications | where: "type", "conference" %}
+  {% assign preprint_pubs = publications | where: "type", "preprint" %}
+  {% assign selected_pubs = publications | where: "selected", true %}
 
-<!-- Selected Publications Section -->
-<section id="selected" class="pt-4 pb-12 md:pb-16 scroll-mt-16">
-  <details class="group" open>
-    <summary class="cursor-pointer flex items-center text-lg md:text-xl font-semibold text-slate-800 mb-6 ml-4 select-none">
-      <svg class="w-5 h-5 mr-2 transition-transform group-open:rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-      </svg>
-      🌟 Selected Publications
-      <div class="section-subtitle-bar h-0.5 w-12 ml-3 rounded-full opacity-60"></div>
-    </summary>
-    <div class="details-content">
+  <h2 class="section-title"><span class="t-emoji" aria-hidden="true">📚</span><span class="grad-text">Publications</span></h2>
+  <p class="section-note">
+    I'm open to collaborations on related projects — feel free to <a href="mailto:{{ site.author.email }}">reach out</a>.
+    Papers are sorted by recency; * indicates equal contribution.
+  </p>
+
+  <div class="pub-tabs" role="tablist" aria-label="Publication lists">
+    <button type="button" role="tab" id="tab-selected" aria-controls="panel-selected" aria-selected="true" tabindex="0" data-panel="selected" class="pub-tab active">
+      Selected <span class="count">{{ selected_pubs.size }}</span>
+    </button>
+    <button type="button" role="tab" id="tab-all" aria-controls="panel-all" aria-selected="false" tabindex="-1" data-panel="all" class="pub-tab">
+      All Publications <span class="count">{{ conference_pubs.size }}</span>
+    </button>
+    {% if preprint_pubs.size > 0 %}
+    <button type="button" role="tab" id="tab-preprints" aria-controls="panel-preprints" aria-selected="false" tabindex="-1" data-panel="preprints" class="pub-tab">
+      Preprints <span class="count">{{ preprint_pubs.size }}</span>
+    </button>
+    {% endif %}
+  </div>
+
+  <div id="panel-selected" class="pub-panel" role="tabpanel" aria-labelledby="tab-selected">
+    <div class="panel-scroll">
       {% include selected.html %}
     </div>
-  </details>
-</section>
+  </div>
 
-<!-- Preprints Section -->
-<section id="preprints" class="pt-4 pb-12 md:pb-16 scroll-mt-16">
-  {% assign publications = site.data.publications %}
-  {% assign preprint_pubs = publications | where: "type", "preprint" %}
-  {% if preprint_pubs.size > 0 %}
-  <details class="group" open>
-    <summary class="cursor-pointer flex items-center text-lg md:text-xl font-semibold text-slate-800 mb-6 ml-4 select-none">
-      <svg class="w-5 h-5 mr-2 transition-transform group-open:rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-      </svg>
-      🚀 Preprints
-      <div class="section-subtitle-bar h-0.5 w-12 ml-3 rounded-full opacity-60"></div>
-    </summary>
-    <div class="details-content">
-      <div class="space-y-6">
-        {% for pub in preprint_pubs %}
-          {% include pub-card.html pub=pub %}
-        {% endfor %}
-      </div>
+  <div id="panel-all" class="pub-panel" role="tabpanel" aria-labelledby="tab-all" hidden="until-found">
+    <div class="panel-scroll">
+      {% for pub in conference_pubs %}
+        {% include pub-card.html pub=pub %}
+      {% endfor %}
     </div>
-  </details>
+  </div>
+
+  {% if preprint_pubs.size > 0 %}
+  <div id="panel-preprints" class="pub-panel" role="tabpanel" aria-labelledby="tab-preprints" hidden="until-found">
+    <div class="panel-scroll">
+      {% for pub in preprint_pubs %}
+        {% include pub-card.html pub=pub %}
+      {% endfor %}
+    </div>
+  </div>
   {% endif %}
 </section>
 
-<!-- Publications Section -->
-<section id="publications" class="pt-4 pb-12 md:pb-16 scroll-mt-16">
-  <details class="group" open>
-    <summary class="cursor-pointer flex items-center text-lg md:text-xl font-semibold text-slate-800 mb-6 ml-4 select-none">
-      <svg class="w-5 h-5 mr-2 transition-transform group-open:rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-      </svg>
-      📄 Publications
-      <div class="section-subtitle-bar h-0.5 w-12 ml-3 rounded-full opacity-60"></div>
-    </summary>
-    <div class="details-content">
-      {% assign publications = site.data.publications %}
-      {% assign conference_pubs = publications | where: "type", "conference" %}
-      <div class="space-y-6">
-        {% for pub in conference_pubs %}
-          {% include pub-card.html pub=pub %}
-        {% endfor %}
-      </div>
-    </div>
-  </details>
+<!-- Research Experience -->
+<section id="experience" class="section">
+  <h2 class="section-title"><span class="t-emoji" aria-hidden="true">💼</span><span class="grad-text">Research Experience</span></h2>
+  {% include experience.html %}
 </section>
 
-<!-- Miscellaneous Section -->
-<section id="misc" class="py-12 md:py-16 scroll-mt-16">
-  <details class="group" open>
-    <summary class="cursor-pointer flex items-center text-2xl md:text-3xl font-bold text-slate-900 mb-8 select-none">
-      <svg class="w-6 h-6 mr-3 transition-transform group-open:rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-      </svg>
-      🎨 Miscellaneous
-      <div class="section-title-bar h-1 w-16 ml-4 rounded-full opacity-80"></div>
-    </summary>
-    <div class="details-content">
-      {% include gallery.html %}
-    </div>
-  </details>
+<!-- Miscellaneous -->
+<section id="misc" class="section">
+  <h2 class="section-title"><span class="t-emoji" aria-hidden="true">🎨</span><span class="grad-text">Miscellaneous</span></h2>
+  {% include gallery.html %}
 </section>

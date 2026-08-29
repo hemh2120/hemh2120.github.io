@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
   {% include head.html %}
-  <body class="bg-white text-slate-900 antialiased selection:bg-primary-100 selection:text-primary-700">
-    <div class="min-h-screen font-sans bg-white">
-      {% include header.html %}
-      
-      <main class="max-w-[980px] mx-auto px-6 md:px-8 pt-20">
-        {{ content }}
-      </main>
+  <body>
+    <div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div>
+    <a class="skip-link" href="#about">Skip to content</a>
+    {% include header.html %}
 
-      {% include footer.html %}
-    </div>
+    <main class="wrap">
+      {{ content }}
+    </main>
+
+    {% include footer.html %}
     <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
   </body>
 </html>

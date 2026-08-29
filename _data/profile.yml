@@ -19,7 +19,7 @@ bio: |
   <br>
   <br>
 
-  My research vision is to construct a virtuous cycle between AI and Systems. I am dedicated to bridging the gap between theoretical AI capabilities and real-world system requirements, striving to build intelligent systems that are not only powerful, but also reliable and efficient at scale.
+  My research vision is to <strong>scale large language models with efficiency and reliability</strong>: rethinking model architectures and generation paradigms so that efficiency survives scale, and building ever-larger training and inference systems that remain stable and dependable.
 
 
 

@@ -1,0 +1,25 @@
+# Research Experience Data
+- org: "WeLM Team, WeChat AI"
+  sub: "Tencent"
+  role: "Research Intern"
+  focus: "Foundation Models Pretraining"
+  logo: "images/logos/wechat.svg"
+  url: "https://www.tencent.com/en-us/"
+
+- org: "Alibaba Group"
+  role: "Research Intern"
+  focus: "Hyperscale Infrastructure Reliability"
+  logo: "images/logos/alibaba.png"
+  url: "https://www.alibabagroup.com/en-US"
+
+- org: "Microsoft Research Asia"
+  role: "Research Intern"
+  focus: "Foundation Models Post-training"
+  logo: "images/logos/microsoft.svg"
+  url: "https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/"
+
+- org: "Peking University"
+  role: "Graduate Student"
+  focus: "Foundation Models and Software Reliability"
+  logo: "images/logos/pku.svg"
+  url: "https://english.pku.edu.cn/"

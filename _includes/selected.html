@@ -1,19 +1,15 @@
 {% comment %}
-Selected Publications Section
-Displays only publications marked as selected in specified order
+Selected Publications
+Renders publications marked as selected, in the order defined below.
 {% endcomment %}
 
 {% assign publications = site.data.publications %}
-
-{% comment %} Define the order of selected publications {% endcomment %}
 {% assign selected_order = "wedlm-preprint,execoder-emnlp2025,bifrost-ase2026,chimera-ase2025,midlog-icse2025" | split: "," %}
 
-<div class="space-y-6">
-  {% for id in selected_order %}
-    {% for pub in publications %}
-      {% if pub.id == id and pub.selected == true %}
-        {% include pub-card.html pub=pub %}
-      {% endif %}
-    {% endfor %}
+{% for id in selected_order %}
+  {% for pub in publications %}
+    {% if pub.id == id and pub.selected == true %}
+      {% include pub-card.html pub=pub %}
+    {% endif %}
   {% endfor %}
-</div>
+{% endfor %}

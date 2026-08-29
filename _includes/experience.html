@@ -1,0 +1,17 @@
+{% assign experience = site.data.experience %}
+
+<div class="exp-grid">
+  {% for item in experience %}
+  <a class="exp-card" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">
+    <span class="exp-logo">
+      <img src="{{ item.logo | relative_url }}" alt="{{ item.org }} logo" loading="lazy">
+    </span>
+    <span class="exp-text">
+      <span class="exp-org">{{ item.org }}</span>
+      {% if item.sub %}<span class="exp-sub">{{ item.sub }}</span>{% endif %}
+      {% if item.role %}<span class="exp-role">{{ item.role }}</span>{% endif %}
+      {% if item.focus %}<span class="exp-focus">{{ item.focus }}</span>{% endif %}
+    </span>
+  </a>
+  {% endfor %}
+</div>
