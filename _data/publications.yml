@@ -355,6 +355,31 @@
 
 
 # ==================== Preprints ====================
+- id: "growmtp-preprint"
+  title: "GrowMTP: Can RL Grow Its Own Draft Head?"
+  authors:
+    - "Minghua He"
+    - "Lingzhe Zhang"
+    - "Yuan Liu"
+    - "Xiao Zhou"
+    - "Aiwei Liu"
+  year: 2026
+  venue: "Preprint"
+  venue_full: "Preprint"
+  type: "preprint"
+  tags: []
+  links:
+    - name: "Project"
+      url: "https://growmtp.github.io/"
+    - name: "Paper"
+      url: "https://growmtp.github.io/assets/GrowMTP.pdf"
+    - name: "Code"
+      url: "https://github.com/hemh02/GrowMTP"
+  tldr: "GrowMTP trains a multi-token prediction draft head from scratch within the reinforcement-learning loop, reusing rollout verification signals as online supervision to achieve 2.13× rollout and 1.60× end-to-end speedups on Qwen3-4B mathematical reasoning."
+  teaser_image: "images/growmtp.gif"
+  selected: false
+  award: null
+
 - id: "robodojo-preprint"
   title: "RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies"
   authors:
