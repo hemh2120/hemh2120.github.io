@@ -372,7 +372,7 @@
     - name: "Project"
       url: "https://growmtp.github.io/"
     - name: "Paper"
-      url: "https://growmtp.github.io/assets/GrowMTP.pdf"
+      url: "https://arxiv.org/abs/2609.16648"
     - name: "Code"
       url: "https://github.com/hemh02/GrowMTP"
   tldr: "GrowMTP trains a multi-token prediction draft head from scratch within the reinforcement-learning loop, reusing rollout verification signals as online supervision to achieve 2.13× rollout and 1.60× end-to-end speedups on Qwen3-4B mathematical reasoning."
