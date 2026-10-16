@@ -33,7 +33,14 @@
   <aside class="hero-side">
     <img class="portrait" src="{{ profile.photo | relative_url }}" alt="Portrait of {{ profile.name }}" width="210" height="262">
 
-    <ul class="contact-list">
+    {% assign scholar = profile.social_links | where: "name", "Google Scholar" | first %}
+    <div class="hero-side-meta">
+      <a class="cite-link" id="cite-stats" hidden data-citations="{{ '/citations.json' | relative_url }}" href="{{ scholar.url }}" target="_blank" rel="noopener noreferrer">
+        <span class="cite-num" data-cite="citations"></span>
+        <span class="cite-label">Citations</span>
+      </a>
+
+      <ul class="contact-list">
       {% for link in profile.social_links %}
       <li>
         <a href="{{ link.url }}" {% if link.url contains 'http' %}target="_blank" rel="noopener noreferrer"{% endif %}>
@@ -56,6 +63,7 @@
         </a>
       </li>
       {% endfor %}
-    </ul>
+      </ul>
+    </div>
   </aside>
 </div>

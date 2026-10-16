@@ -3,6 +3,37 @@
 # ==================== Publications ====================
 
 
+- id: "parallel-survey-csur"
+  title: "A Survey on Parallel Text Generation: From Parallel Decoding to Diffusion Language Models"
+  authors:
+    - "Lingzhe Zhang*"
+    - "Liancheng Fang*"
+    - "Chiming Duan*"
+    - "Minghua He*"
+    - "Leyi Pan*"
+    - "Pei Xiao"
+    - "Shiyu Huang"
+    - "Yunpeng Zhai"
+    - "Xuming Hu"
+    - "Philip S. Yu"
+    - "Aiwei Liu"
+  year: 2026
+  venue: "ACM CSUR"
+  venue_short: "ACM CSUR"
+  venue_full: "ACM Computing Surveys"
+  type: "conference"
+  tags:
+    - "CoreA*"
+  links:
+    - name: "Paper"
+      url: "https://arxiv.org/abs/2508.08712"
+    - name: "Code"
+      url: "https://github.com/zhanglingzhe0820/Awesome-Parallel-Text-Generation"
+  tldr: "A comprehensive survey of parallel text generation techniques, from parallel decoding to the latest diffusion language models."
+  teaser_image: "images/parallel_survey.png"
+  selected: false
+  award: null
+
 - id: "near-free-parallelism-emnlp2026"
   title: "How Much Parallelism Is \"Free\"? A Principle of Near-Free Parallelism for Parallel Decoding"
   authors:
@@ -403,34 +434,6 @@
       url: "https://robodojo-benchmark.com/LeaderBoard"
   tldr: "RoboDojo is a unified benchmark for generalist robot manipulation policies spanning 42 simulation tasks and 18 real-world tasks, evaluating generalization, memory, precision, long-horizon execution, and open-vocabulary instruction following through a single integration layer with a reproducible remote real-world evaluation system and public leaderboard."
   teaser_image: "images/robodojo.png"
-  selected: false
-
-- id: "parallel-survey-preprint"
-  title: "A Survey on Parallel Text Generation: From Parallel Decoding to Diffusion Language Models"
-  authors:
-    - "Lingzhe Zhang*"
-    - "Liancheng Fang*"
-    - "Chiming Duan*"
-    - "Minghua He*"
-    - "Leyi Pan*"
-    - "Pei Xiao"
-    - "Shiyu Huang"
-    - "Yunpeng Zhai"
-    - "Xuming Hu"
-    - "Philip S. Yu"
-    - "Aiwei Liu"
-  year: 2025
-  venue: "Preprint"
-  venue_full: "arXiv Preprint"
-  type: "preprint"
-  tags: []
-  links:
-    - name: "Paper"
-      url: "https://arxiv.org/abs/2508.08712"
-    - name: "Code"
-      url: "https://github.com/zhanglingzhe0820/Awesome-Parallel-Text-Generation"
-  tldr: "A comprehensive survey of parallel text generation techniques, from parallel decoding to the latest diffusion language models."
-  teaser_image: "images/parallel_survey.png"
   selected: false
 
 - id: "microremed-preprint"

@@ -39,7 +39,7 @@ Award chips are the only colored element; venue and rank chips stay neutral.
         {% endif %}
       {% endif %}
       {% for tag in include.pub.tags %}
-        {% if tag == "CCF-A" or tag == "CCF-B" or tag == "Tsinghua-A" %}
+        {% if tag == "CCF-A" or tag == "CCF-B" or tag == "Tsinghua-A" or tag == "CoreA*" %}
           <span class="chip chip-rank">{{ tag }}</span>
         {% elsif tag == "Technical Report" %}
           <span class="chip chip-teal">{{ tag }}</span>

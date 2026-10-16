@@ -1,4 +1,8 @@
 # News Data
+- date: "2026/10"
+  content: "One paper accepted to ACM CSUR!"
+  highlight: true
+
 - date: "2026/08"
   content: "Two papers accepted to EMNLP 2026, see you in Budapest! 🇭🇺"
   highlight: true
