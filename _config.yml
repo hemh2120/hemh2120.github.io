@@ -20,7 +20,6 @@ exclude:
   - README.md
   - node_modules
   - vendor
-  - scripts
 
 # Include files
 include:

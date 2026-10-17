@@ -438,10 +438,6 @@ section + section {
   text-decoration: none;
 }
 
-.cite-link[hidden] {
-  display: none;
-}
-
 .cite-link:hover {
   text-decoration: none;
 }

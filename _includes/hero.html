@@ -35,8 +35,8 @@
 
     {% assign scholar = profile.social_links | where: "name", "Google Scholar" | first %}
     <div class="hero-side-meta">
-      <a class="cite-link" id="cite-stats" hidden data-citations="{{ '/citations.json' | relative_url }}" href="{{ scholar.url }}" target="_blank" rel="noopener noreferrer">
-        <span class="cite-num" data-cite="citations"></span>
+      <a class="cite-link" href="{{ scholar.url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ profile.citations }} citations on Google Scholar">
+        <span class="cite-num">{{ profile.citations }}</span>
         <span class="cite-label">Citations</span>
       </a>
 

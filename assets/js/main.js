@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function () {
   initNewsToggle();
   initScrollReveal();
   initHeroSpotlight();
-  initCitations();
 });
 
 /* ---------- Header scroll state ---------- */
@@ -231,44 +230,4 @@ function initHeroSpotlight() {
   }, { passive: true });
 
   document.documentElement.addEventListener('mouseleave', () => glow.classList.remove('on'));
-}
-
-/* ---------- Google Scholar counts ---------- */
-
-function animateCount(node, target) {
-  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (reduce) {
-    node.textContent = target.toLocaleString('en-US');
-    return;
-  }
-  const start = performance.now();
-  const duration = 900;
-  function frame(now) {
-    const t = Math.min(1, (now - start) / duration);
-    const eased = 1 - Math.pow(1 - t, 3);
-    node.textContent = Math.round(target * eased).toLocaleString('en-US');
-    if (t < 1) requestAnimationFrame(frame);
-  }
-  requestAnimationFrame(frame);
-}
-
-function initCitations() {
-  const root = document.getElementById('cite-stats');
-  if (!root || !root.dataset.citations) return;
-
-  fetch(root.dataset.citations, { cache: 'no-cache' })
-    .then(response => {
-      if (!response.ok) throw new Error(String(response.status));
-      return response.json();
-    })
-    .then(data => {
-      const value = data.citations;
-      const node = root.querySelector('[data-cite="citations"]');
-      if (!node || typeof value !== 'number' || !Number.isFinite(value)) return;
-      root.title = data.updated ? 'Google Scholar, updated ' + data.updated : 'Google Scholar';
-      root.setAttribute('aria-label', value.toLocaleString('en-US') + ' citations on Google Scholar');
-      root.hidden = false;
-      animateCount(node, value);
-    })
-    .catch(() => {});
 }

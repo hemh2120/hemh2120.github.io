@@ -33,6 +33,9 @@ highlights: |
   Research Internships at Major Industry Research Labs  
   Core Contributor to Leading Foundation Models
 
+# Update this by hand, then push. It is the Google Scholar citation count.
+citations: 641
+
 social_links:
   - name: "Email"
     url: "mailto:hemh2120@gmail.com"
